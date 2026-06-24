@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dog Age Calculator</title>
+<style>
+body{
+    font-family:Arial,sans-serif;
+    max-width:700px;
+    margin:auto;
+    padding:20px;
+}
+input,button{
+    padding:10px;
+    margin:10px 0;
+}
+.result{
+    font-size:24px;
+    font-weight:bold;
+}
+</style>
+</head>
+<body>
+
+<h1>Dog Age Calculator</h1>
+
+<p>Enter your dog's age in years.</p>
+
+<input type="number" id="dogAge" placeholder="Dog age">
+
+<button onclick="calculateAge()">Calculate</button>
+
+<div class="result" id="result"></div>
+
+<script>
+function calculateAge() {
+    let dogAge = document.getElementById("dogAge").value;
+    let humanAge = dogAge * 7;
+
+    document.getElementById("result").innerHTML =
+        "Estimated Human Age: " + humanAge;
+}
+</script>
+
+</body>
+</html>

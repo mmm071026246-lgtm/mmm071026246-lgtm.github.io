@@ -1,9 +1,24 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Dog Age Calculator</title>
+
+<title>Dog Age Calculator - Convert Dog Years to Human Years</title>
+
+<meta name="description" content="Free Dog Age Calculator. Convert dog years to human years instantly and learn how dog aging works.">
+
+<meta name="keywords" content="dog age calculator,dog years,human years calculator,pet calculator">
+
+<meta name="robots" content="index,follow">
+
+<link rel="canonical" href="https://mmm071026246-lgtm.github.io/pet-calculators/dog-age-calculator.html">
+
+<meta property="og:title" content="Dog Age Calculator">
+<meta property="og:description" content="Convert dog years to human years instantly.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://mmm071026246-lgtm.github.io/pet-calculators/dog-age-calculator.html">
 
 <style>
 body{
@@ -19,6 +34,10 @@ input,button{
     font-size:16px;
 }
 
+button{
+    cursor:pointer;
+}
+
 .result{
     margin-top:20px;
     font-size:24px;
@@ -27,6 +46,10 @@ input,button{
 
 a{
     text-decoration:none;
+}
+
+ul{
+    padding-left:20px;
 }
 </style>
 </head>
@@ -38,7 +61,8 @@ a{
 <h1>Dog Age Calculator</h1>
 
 <p>
-Use this free calculator to estimate your dog's age in human years.
+Use this free dog age calculator to estimate your dog's age in human years.
+Simply enter your dog's age and get an instant estimate based on commonly accepted aging guidelines.
 </p>
 
 <input type="number" id="dogAge" min="0" step="0.1" placeholder="Enter dog age">
@@ -50,37 +74,52 @@ Use this free calculator to estimate your dog's age in human years.
 <h2>How Dog Age Is Calculated</h2>
 
 <p>
-The common "multiply by 7" rule is only a rough estimate.
-Dogs mature faster during their first two years of life.
+The common "multiply by 7" rule is only a rough estimate. Dogs age much faster during their first two years of life and then continue aging at a slower rate. This calculator uses a simplified method that better reflects typical canine development.
 </p>
+
+<h2>Why Dog Years Matter</h2>
+
+<p>
+Understanding your dog's age in human years can help you make informed decisions about nutrition, exercise, veterinary care, and overall wellness throughout different life stages.
+</p>
+
+<hr>
+
+<h2>Related Calculators</h2>
+
+<ul>
+    <li><a href="cat-age-calculator.html">Cat Age Calculator</a></li>
+    <li><a href="dog-pregnancy-calculator.html">Dog Pregnancy Calculator</a></li>
+</ul>
 
 <script>
 function calculateAge(){
 
-let age = parseFloat(document.getElementById("dogAge").value);
+    let age = parseFloat(document.getElementById("dogAge").value);
 
-if(isNaN(age) || age < 0){
+    if(isNaN(age) || age < 0){
+        document.getElementById("result").innerHTML =
+        "Please enter a valid age.";
+        return;
+    }
+
+    let humanAge;
+
+    if(age <= 1){
+        humanAge = 15;
+    }
+    else if(age <= 2){
+        humanAge = 24;
+    }
+    else{
+        humanAge = 24 + ((age - 2) * 5);
+    }
+
     document.getElementById("result").innerHTML =
-    "Please enter a valid age.";
-    return;
-}
-
-let humanAge;
-
-if(age <= 1){
-    humanAge = 15;
-}
-else if(age <= 2){
-    humanAge = 24;
-}
-else{
-    humanAge = 24 + ((age - 2) * 5);
-}
-
-document.getElementById("result").innerHTML =
-"Estimated Human Age: " + humanAge.toFixed(1) + " years";
+    "Estimated Human Age: " + humanAge.toFixed(1) + " years";
 }
 </script>
 
 </body>
 </html>
+```

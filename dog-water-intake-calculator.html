@@ -1,0 +1,107 @@
+```html id="6qtw91"
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Dog Water Intake Calculator - Daily Water Needs</title>
+
+<meta name="description" content="Free Dog Water Intake Calculator. Estimate your dog's recommended daily water intake based on body weight.">
+
+<meta name="robots" content="index,follow">
+
+<link rel="canonical" href="https://mmm071026246-lgtm.github.io/pet-calculators/dog-water-intake-calculator.html">
+
+<style>
+body{
+    font-family:Arial,sans-serif;
+    max-width:800px;
+    margin:auto;
+    padding:20px;
+    line-height:1.6;
+}
+
+input,button{
+    padding:10px;
+    font-size:16px;
+    margin-top:10px;
+}
+
+.result{
+    margin-top:20px;
+    font-size:22px;
+    font-weight:bold;
+}
+
+a{
+    text-decoration:none;
+}
+</style>
+</head>
+
+<body>
+
+<a href="index.html">← Home</a>
+
+<h1>Dog Water Intake Calculator</h1>
+
+<p>
+Estimate your dog's daily water needs based on body weight.
+Water requirements can vary depending on temperature, activity level, diet, and overall health.
+</p>
+
+<label>Dog Weight (kg):</label><br>
+<input type="number" id="weight" min="0.1" step="0.1">
+
+<br>
+
+<button onclick="calculateWater()">Calculate Water Intake</button>
+
+<div class="result" id="result"></div>
+
+<h2>Daily Water Requirements</h2>
+
+<p>
+Healthy dogs typically need between 50 and 60 milliliters of water per kilogram of body weight each day.
+This calculator uses 55 ml per kilogram as a general guideline.
+</p>
+
+<h2>Why Hydration Matters</h2>
+
+<p>
+Adequate hydration supports digestion, circulation, temperature regulation, and overall health.
+Always ensure your dog has access to fresh drinking water.
+</p>
+
+<hr>
+
+<h2>Related Calculators</h2>
+
+<ul>
+<li><a href="dog-food-calculator.html">Dog Food Calculator</a></li>
+<li><a href="dog-calorie-calculator.html">Dog Calorie Calculator</a></li>
+</ul>
+
+<script>
+function calculateWater(){
+
+let weight = parseFloat(document.getElementById("weight").value);
+
+if(isNaN(weight) || weight <= 0){
+document.getElementById("result").innerHTML =
+"Please enter a valid weight.";
+return;
+}
+
+let water = weight * 55;
+
+document.getElementById("result").innerHTML =
+"Recommended Daily Water Intake: " +
+water.toFixed(0) + " ml";
+}
+</script>
+
+</body>
+</html>
+```

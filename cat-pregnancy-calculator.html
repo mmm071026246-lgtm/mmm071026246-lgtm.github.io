@@ -1,0 +1,107 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Cat Pregnancy Calculator - Estimate Your Cat's Due Date</title>
+
+<meta name="description" content="Free Cat Pregnancy Calculator. Estimate your cat's due date based on the mating date and learn about feline pregnancy timelines.">
+
+<meta name="robots" content="index,follow">
+
+<link rel="canonical" href="https://mmm071026246-lgtm.github.io/pet-calculators/cat-pregnancy-calculator.html">
+
+<style>
+body{
+    font-family:Arial,sans-serif;
+    max-width:800px;
+    margin:auto;
+    padding:20px;
+    line-height:1.6;
+}
+
+input,button{
+    padding:10px;
+    font-size:16px;
+    margin-top:10px;
+}
+
+.result{
+    margin-top:20px;
+    font-size:22px;
+    font-weight:bold;
+}
+
+a{
+    text-decoration:none;
+}
+</style>
+</head>
+
+<body>
+
+<a href="index.html">← Home</a>
+
+<h1>Cat Pregnancy Calculator</h1>
+
+<p>
+Estimate your cat's due date based on the mating date.
+Most cats are pregnant for approximately 65 days.
+</p>
+
+<label for="matingDate">Mating Date:</label><br>
+<input type="date" id="matingDate">
+
+<br>
+
+<button onclick="calculateDueDate()">Calculate Due Date</button>
+
+<div class="result" id="result"></div>
+
+<h2>How Long Are Cats Pregnant?</h2>
+
+<p>
+The average feline pregnancy lasts approximately 63 to 67 days,
+with 65 days commonly used as an estimate.
+</p>
+
+<p>
+Always consult your veterinarian regarding your cat's pregnancy and health.
+</p>
+
+<hr>
+
+<h2>Related Calculators</h2>
+
+<ul>
+<li><a href="dog-pregnancy-calculator.html">Dog Pregnancy Calculator</a></li>
+<li><a href="cat-age-calculator.html">Cat Age Calculator</a></li>
+</ul>
+
+<script>
+function calculateDueDate(){
+
+const matingDate =
+document.getElementById("matingDate").value;
+
+if(!matingDate){
+document.getElementById("result").innerHTML =
+"Please select a date.";
+return;
+}
+
+let date = new Date(matingDate);
+
+date.setDate(date.getDate() + 65);
+
+document.getElementById("result").innerHTML =
+"Estimated Due Date: " +
+date.toDateString();
+}
+</script>
+
+</body>
+</html>
+```

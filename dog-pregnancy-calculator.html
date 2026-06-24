@@ -1,9 +1,24 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Dog Pregnancy Calculator</title>
+
+<title>Dog Pregnancy Calculator - Estimate Your Dog's Due Date</title>
+
+<meta name="description" content="Free Dog Pregnancy Calculator. Estimate your dog's due date based on the mating date and learn about canine pregnancy timelines.">
+
+<meta name="keywords" content="dog pregnancy calculator,dog due date calculator,canine pregnancy,puppy due date">
+
+<meta name="robots" content="index,follow">
+
+<link rel="canonical" href="https://mmm071026246-lgtm.github.io/pet-calculators/dog-pregnancy-calculator.html">
+
+<meta property="og:title" content="Dog Pregnancy Calculator">
+<meta property="og:description" content="Estimate your dog's due date based on the mating date.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://mmm071026246-lgtm.github.io/pet-calculators/dog-pregnancy-calculator.html">
 
 <style>
 body{
@@ -20,13 +35,26 @@ input,button{
     margin-top:10px;
 }
 
+button{
+    cursor:pointer;
+}
+
 .result{
     margin-top:20px;
     font-size:22px;
     font-weight:bold;
 }
+
+a{
+    text-decoration:none;
+}
+
+ul{
+    padding-left:20px;
+}
 </style>
 </head>
+
 <body>
 
 <a href="index.html">← Home</a>
@@ -34,11 +62,10 @@ input,button{
 <h1>Dog Pregnancy Calculator</h1>
 
 <p>
-Estimate your dog's due date based on the mating date.
-Most dogs are pregnant for approximately 63 days.
+Use this free dog pregnancy calculator to estimate your dog's due date based on the mating date. Most canine pregnancies last approximately 63 days, although some variation is normal.
 </p>
 
-<label>Mating Date:</label><br>
+<label for="matingDate">Mating Date:</label><br>
 <input type="date" id="matingDate">
 
 <br>
@@ -50,36 +77,52 @@ Most dogs are pregnant for approximately 63 days.
 <h2>How Long Are Dogs Pregnant?</h2>
 
 <p>
-The average canine pregnancy lasts around 63 days from conception,
-although a few days of variation is normal.
+The average dog pregnancy lasts around 63 days from conception. Depending on breed, litter size, and individual factors, the delivery date may vary by a few days.
 </p>
 
+<h2>Pregnancy Care Tips</h2>
+
 <p>
-Always consult your veterinarian for professional advice regarding
-your dog's pregnancy and health.
+Proper nutrition, regular veterinary checkups, and a safe environment are important throughout pregnancy. If you notice unusual symptoms or have concerns about your dog's health, consult a licensed veterinarian.
 </p>
+
+<h2>Important Note</h2>
+
+<p>
+This calculator provides an estimate only and should not replace professional veterinary advice. Actual delivery dates can vary.
+</p>
+
+<hr>
+
+<h2>Related Calculators</h2>
+
+<ul>
+    <li><a href="dog-age-calculator.html">Dog Age Calculator</a></li>
+    <li><a href="cat-age-calculator.html">Cat Age Calculator</a></li>
+</ul>
 
 <script>
 function calculateDueDate(){
 
-const matingDate =
-document.getElementById("matingDate").value;
+    const matingDate =
+    document.getElementById("matingDate").value;
 
-if(!matingDate){
-document.getElementById("result").innerHTML =
-"Please select a date.";
-return;
-}
+    if(!matingDate){
+        document.getElementById("result").innerHTML =
+        "Please select a date.";
+        return;
+    }
 
-let date = new Date(matingDate);
+    let date = new Date(matingDate);
 
-date.setDate(date.getDate() + 63);
+    date.setDate(date.getDate() + 63);
 
-document.getElementById("result").innerHTML =
-"Estimated Due Date: " +
-date.toDateString();
+    document.getElementById("result").innerHTML =
+    "Estimated Due Date: " +
+    date.toDateString();
 }
 </script>
 
 </body>
 </html>
+```

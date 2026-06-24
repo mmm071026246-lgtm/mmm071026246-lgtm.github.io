@@ -1,0 +1,105 @@
+```html id="6rghz4"
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Cat Food Calculator - Daily Feeding Amount</title>
+
+<meta name="description" content="Free Cat Food Calculator. Estimate your cat's daily food requirements based on body weight.">
+
+<meta name="robots" content="index,follow">
+
+<link rel="canonical" href="https://mmm071026246-lgtm.github.io/pet-calculators/cat-food-calculator.html">
+
+<style>
+body{
+    font-family:Arial,sans-serif;
+    max-width:800px;
+    margin:auto;
+    padding:20px;
+    line-height:1.6;
+}
+
+input,button{
+    padding:10px;
+    font-size:16px;
+    margin-top:10px;
+}
+
+.result{
+    margin-top:20px;
+    font-size:22px;
+    font-weight:bold;
+}
+
+a{
+    text-decoration:none;
+}
+</style>
+</head>
+
+<body>
+
+<a href="index.html">← Home</a>
+
+<h1>Cat Food Calculator</h1>
+
+<p>
+Estimate your cat's recommended daily food amount based on body weight.
+Results are estimates and should be adjusted according to age, health, activity level, and veterinary recommendations.
+</p>
+
+<label>Cat Weight (kg):</label><br>
+<input type="number" id="weight" min="0.1" step="0.1">
+
+<br>
+
+<button onclick="calculateFood()">Calculate</button>
+
+<div class="result" id="result"></div>
+
+<h2>Feeding Guidelines</h2>
+
+<p>
+Most adult cats require approximately 20 to 30 grams of dry food per kilogram of body weight per day. Actual requirements may vary depending on lifestyle and diet type.
+</p>
+
+<h2>Why Proper Feeding Matters</h2>
+
+<p>
+Maintaining a healthy weight helps reduce the risk of obesity, diabetes, joint problems, and other health conditions in cats.
+</p>
+
+<hr>
+
+<h2>Related Calculators</h2>
+
+<ul>
+<li><a href="cat-age-calculator.html">Cat Age Calculator</a></li>
+<li><a href="cat-pregnancy-calculator.html">Cat Pregnancy Calculator</a></li>
+</ul>
+
+<script>
+function calculateFood(){
+
+let weight = parseFloat(document.getElementById("weight").value);
+
+if(isNaN(weight) || weight <= 0){
+document.getElementById("result").innerHTML =
+"Please enter a valid weight.";
+return;
+}
+
+let food = weight * 25;
+
+document.getElementById("result").innerHTML =
+"Recommended Daily Food: " +
+food.toFixed(0) + " grams";
+}
+</script>
+
+</body>
+</html>
+```

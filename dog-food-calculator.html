@@ -1,0 +1,99 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Dog Food Calculator - Daily Feeding Amount</title>
+
+<meta name="description" content="Free Dog Food Calculator. Estimate your dog's daily food requirements based on body weight.">
+
+<meta name="robots" content="index,follow">
+
+<link rel="canonical" href="https://mmm071026246-lgtm.github.io/pet-calculators/dog-food-calculator.html">
+
+<style>
+body{
+    font-family:Arial,sans-serif;
+    max-width:800px;
+    margin:auto;
+    padding:20px;
+    line-height:1.6;
+}
+
+input,button{
+    padding:10px;
+    font-size:16px;
+    margin-top:10px;
+}
+
+.result{
+    margin-top:20px;
+    font-size:22px;
+    font-weight:bold;
+}
+
+a{
+    text-decoration:none;
+}
+</style>
+</head>
+
+<body>
+
+<a href="index.html">← Home</a>
+
+<h1>Dog Food Calculator</h1>
+
+<p>
+Estimate your dog's recommended daily food amount based on body weight.
+Results are estimates and should be adjusted according to activity level, age, and veterinary advice.
+</p>
+
+<label>Dog Weight (kg):</label><br>
+<input type="number" id="weight" min="0.1" step="0.1">
+
+<br>
+
+<button onclick="calculateFood()">Calculate</button>
+
+<div class="result" id="result"></div>
+
+<h2>Feeding Guidelines</h2>
+
+<p>
+Adult dogs typically require approximately 2% to 3% of their body weight in food per day. Individual needs may vary depending on breed, age, metabolism, and activity level.
+</p>
+
+<hr>
+
+<h2>Related Calculators</h2>
+
+<ul>
+<li><a href="dog-calorie-calculator.html">Dog Calorie Calculator</a></li>
+<li><a href="dog-water-intake-calculator.html">Dog Water Intake Calculator</a></li>
+</ul>
+
+<script>
+function calculateFood(){
+
+let weight = parseFloat(document.getElementById("weight").value);
+
+if(isNaN(weight) || weight <= 0){
+document.getElementById("result").innerHTML =
+"Please enter a valid weight.";
+return;
+}
+
+let food = weight * 25;
+
+document.getElementById("result").innerHTML =
+"Recommended Daily Food: " +
+food.toFixed(0) + " grams";
+}
+</script>
+
+</body>
+</html>
+```

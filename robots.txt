@@ -2,4 +2,4 @@ User-agent: *
 
 Allow: /
 
-Sitemap: https://mmm071026246-lgtm.github.io/pet-calculators/sitemap.xml
+Sitemap: https://mmm071026246-lgtm.github.io/sitemap.xml

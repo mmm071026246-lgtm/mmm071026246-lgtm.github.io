@@ -1,37 +1,214 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <!-- HOME -->
 
 <url>
 <loc>https://mmm071026246-lgtm.github.io/</loc>
-<changefreq>weekly</changefreq>
+<changefreq>daily</changefreq>
 <priority>1.0</priority>
 </url>
 
-<!-- DOG HUB -->
+<!-- MAIN PAGES -->
+
+<url>
+<loc>https://mmm071026246-lgtm.github.io/calculators.html</loc>
+<changefreq>weekly</changefreq>
+<priority>0.9</priority>
+</url>
+
+<url>
+<loc>https://mmm071026246-lgtm.github.io/guides.html</loc>
+<changefreq>weekly</changefreq>
+<priority>0.9</priority>
+</url>
+
+<url>
+<loc>https://mmm071026246-lgtm.github.io/about.html</loc>
+<changefreq>yearly</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>https://mmm071026246-lgtm.github.io/contact.html</loc>
+<changefreq>yearly</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>https://mmm071026246-lgtm.github.io/privacy-policy.html</loc>
+<changefreq>yearly</changefreq>
+<priority>0.3</priority>
+</url>
+
+<url>
+<loc>https://mmm071026246-lgtm.github.io/terms.html</loc>
+<changefreq>yearly</changefreq>
+<priority>0.3</priority>
+</url>
+
+<!-- PET HUBS -->
 
 <url>
 <loc>https://mmm071026246-lgtm.github.io/dog/</loc>
 <changefreq>weekly</changefreq>
-<priority>0.95</priority>
+<priority>0.9</priority>
+</url>
+
+<url>
+<loc>https://mmm071026246-lgtm.github.io/cat/</loc>
+<changefreq>weekly</changefreq>
+<priority>0.9</priority>
+</url>
+
+<url>
+<loc>https://mmm071026246-lgtm.github.io/bird/</loc>
+<changefreq>weekly</changefreq>
+<priority>0.9</priority>
+</url>
+
+<url>
+<loc>https://mmm071026246-lgtm.github.io/rabbit/</loc>
+<changefreq>weekly</changefreq>
+<priority>0.9</priority>
+</url>
+
+<url>
+<loc>https://mmm071026246-lgtm.github.io/hamster/</loc>
+<changefreq>weekly</changefreq>
+<priority>0.9</priority>
+</url>
+
+<url>
+<loc>https://mmm071026246-lgtm.github.io/guinea-pig/</loc>
+<changefreq>weekly</changefreq>
+<priority>0.9</priority>
+</url>
+
+<url>
+<loc>https://mmm071026246-lgtm.github.io/fish/</loc>
+<changefreq>weekly</changefreq>
+<priority>0.9</priority>
+</url>
+
+<url>
+<loc>https://mmm071026246-lgtm.github.io/turtle/</loc>
+<changefreq>weekly</changefreq>
+<priority>0.9</priority>
+</url>
+
+<url>
+<loc>https://mmm071026246-lgtm.github.io/reptile/</loc>
+<changefreq>weekly</changefreq>
+<priority>0.9</priority>
+</url>
+
+<url>
+<loc>https://mmm071026246-lgtm.github.io/horse/</loc>
+<changefreq>weekly</changefreq>
+<priority>0.9</priority>
+</url>
+
+<!-- BLOG HUBS -->
+
+<url><loc>https://mmm071026246-lgtm.github.io/dog-blog/</loc></url>
+<url><loc>https://mmm071026246-lgtm.github.io/cat-blog/</loc></url>
+<url><loc>https://mmm071026246-lgtm.github.io/bird-blog/</loc></url>
+<url><loc>https://mmm071026246-lgtm.github.io/rabbit-blog/</loc></url>
+<url><loc>https://mmm071026246-lgtm.github.io/hamster-blog/</loc></url>
+<url><loc>https://mmm071026246-lgtm.github.io/guinea-pig-blog/</loc></url>
+<url><loc>https://mmm071026246-lgtm.github.io/fish-blog/</loc></url>
+<url><loc>https://mmm071026246-lgtm.github.io/turtle-blog/</loc></url>
+<url><loc>https://mmm071026246-lgtm.github.io/reptile-blog/</loc></url>
+<url><loc>https://mmm071026246-lgtm.github.io/horse-blog/</loc></url>
+
+<!-- DOG HUB -->
+
+<url>
+<loc>https://mmm071026246-lgtm.github.io/dog/index.html</loc>
+<priority>0.9</priority>
 </url>
 
 <url>
 <loc>https://mmm071026246-lgtm.github.io/dog/calculators.html</loc>
-<changefreq>weekly</changefreq>
 <priority>0.9</priority>
 </url>
 
-<!-- DOG BLOG HUB -->
+<!-- DOG BLOG -->
 
 <url>
-<loc>https://mmm071026246-lgtm.github.io/dog-blog/</loc>
+<loc>https://mmm071026246-lgtm.github.io/dog-blog/index.html</loc>
+<priority>0.8</priority>
+</url>
+
+<url>
+<loc>https://mmm071026246-lgtm.github.io/dog-blog/how-much-food-should-i-feed-my-dog.html</loc>
+</url>
+
+<url>
+<loc>https://mmm071026246-lgtm.github.io/dog-blog/how-much-water-should-a-dog-drink.html</loc>
+</url>
+
+<url>
+<loc>https://mmm071026246-lgtm.github.io/dog-blog/how-to-calculate-dog-age.html</loc>
+</url>
+
+<url>
+<loc>https://mmm071026246-lgtm.github.io/dog-blog/signs-your-dog-is-overweight.html</loc>
+</url>
+
+<!-- CAT -->
+
+<url>
+<loc>https://mmm071026246-lgtm.github.io/cat/</loc>
 <changefreq>weekly</changefreq>
 <priority>0.9</priority>
 </url>
 
+<url>
+<loc>https://mmm071026246-lgtm.github.io/cat/index.html</loc>
+<priority>0.9</priority>
+</url>
+
+<!-- CAT CALCULATORS -->
+
+<url>
+<loc>https://mmm071026246-lgtm.github.io/cat/cat-age-calculator.html</loc>
+</url>
+
+<url>
+<loc>https://mmm071026246-lgtm.github.io/cat/cat-food-calculator.html</loc>
+</url>
+
+<url>
+<loc>https://mmm071026246-lgtm.github.io/cat/cat-pregnancy-calculator.html</loc>
+</url>
+
+<url>
+<loc>https://mmm071026246-lgtm.github.io/cat/cat-water-intake-calculator.html</loc>
+</url>
+
+<!-- CAT BLOG -->
+
+<url>
+<loc>https://mmm071026246-lgtm.github.io/cat-blog/</loc>
+</url>
+
+<url>
+<loc>https://mmm071026246-lgtm.github.io/cat-blog/how-much-food-should-i-feed-my-cat.html</loc>
+</url>
+
+<url>
+<loc>https://mmm071026246-lgtm.github.io/cat-blog/how-much-water-should-a-cat-drink.html</loc>
+</url>
+
+<url>
+<loc>https://mmm071026246-lgtm.github.io/cat-blog/how-to-calculate-cat-age.html</loc>
+</url>
+
+<url>
+<loc>https://mmm071026246-lgtm.github.io/cat-blog/cat-pregnancy-length-explained.html</loc>
+</url>
 <!-- DOG CALCULATORS -->
 
 <url><loc>https://mmm071026246-lgtm.github.io/dog/dog-age-calculator.html</loc></url>
@@ -65,110 +242,26 @@
 <url><loc>https://mmm071026246-lgtm.github.io/dog/puppy-vaccination-calculator.html</loc></url>
 <url><loc>https://mmm071026246-lgtm.github.io/dog/puppy-weight-calculator.html</loc></url>
 <url><loc>https://mmm071026246-lgtm.github.io/dog/senior-dog-age-calculator.html</loc></url>
-
 <!-- DOG BLOG -->
 
 <url>
+<loc>https://mmm071026246-lgtm.github.io/dog-blog/index.html</loc>
+</url>
+
+<url>
 <loc>https://mmm071026246-lgtm.github.io/dog-blog/how-much-food-should-i-feed-my-dog.html</loc>
-<changefreq>monthly</changefreq>
-<priority>0.8</priority>
 </url>
 
 <url>
 <loc>https://mmm071026246-lgtm.github.io/dog-blog/how-much-water-should-a-dog-drink.html</loc>
-<changefreq>monthly</changefreq>
-<priority>0.8</priority>
 </url>
 
 <url>
 <loc>https://mmm071026246-lgtm.github.io/dog-blog/how-to-calculate-dog-age.html</loc>
-<changefreq>monthly</changefreq>
-<priority>0.8</priority>
 </url>
 
 <url>
 <loc>https://mmm071026246-lgtm.github.io/dog-blog/signs-your-dog-is-overweight.html</loc>
-<changefreq>monthly</changefreq>
-<priority>0.8</priority>
 </url>
-
-<!-- PET CATEGORY HUBS -->
-
-<url><loc>https://mmm071026246-lgtm.github.io/cat/</loc></url>
-<url><loc>https://mmm071026246-lgtm.github.io/cat-blog/</loc></url>
-
-<url><loc>https://mmm071026246-lgtm.github.io/Bird/</loc></url>
-<url><loc>https://mmm071026246-lgtm.github.io/Bird-blod/</loc></url>
-
-<url><loc>https://mmm071026246-lgtm.github.io/Fish,Aquarium/</loc></url>
-<url><loc>https://mmm071026246-lgtm.github.io/Fish,Aquarium-blog/</loc></url>
-<!-- MAIN PAGES -->
-
-<url>
-<loc>https://mmm071026246-lgtm.github.io/calculators.html</loc>
-<changefreq>weekly</changefreq>
-<priority>0.9</priority>
-</url>
-
-<url>
-<loc>https://mmm071026246-lgtm.github.io/guides.html</loc>
-<changefreq>weekly</changefreq>
-<priority>0.9</priority>
-</url>
-
-<url>
-<loc>https://mmm071026246-lgtm.github.io/about.html</loc>
-<changefreq>yearly</changefreq>
-<priority>0.4</priority>
-</url>
-
-<url>
-<loc>https://mmm071026246-lgtm.github.io/contact.html</loc>
-<changefreq>yearly</changefreq>
-<priority>0.3</priority>
-</url>
-
-<url>
-<loc>https://mmm071026246-lgtm.github.io/privacy-policy.html</loc>
-<changefreq>yearly</changefreq>
-<priority>0.2</priority>
-</url>
-
-<url>
-<loc>https://mmm071026246-lgtm.github.io/terms.html</loc>
-<changefreq>yearly</changefreq>
-<priority>0.2</priority>
-</url>
-<!-- PET HUBS -->
-
-<url><loc>https://mmm071026246-lgtm.github.io/bird/</loc></url>
-<url><loc>https://mmm071026246-lgtm.github.io/bird-blod/</loc></url>
-
-<url><loc>https://mmm071026246-lgtm.github.io/cat/</loc></url>
-<url><loc>https://mmm071026246-lgtm.github.io/cat-blog/</loc></url>
-
-<url><loc>https://mmm071026246-lgtm.github.io/dog/</loc></url>
-<url><loc>https://mmm071026246-lgtm.github.io/dog-blog/</loc></url>
-
-<url><loc>https://mmm071026246-lgtm.github.io/fish,Aquarium/</loc></url>
-<url><loc>https://mmm071026246-lgtm.github.io/fish,Aquarium-blog/</loc></url>
-
-<url><loc>https://mmm071026246-lgtm.github.io/guinea%20Pig/</loc></url>
-<url><loc>https://mmm071026246-lgtm.github.io/guinea%20Pig-blog/</loc></url>
-
-<url><loc>https://mmm071026246-lgtm.github.io/hamster/</loc></url>
-<url><loc>https://mmm071026246-lgtm.github.io/hamster-blog/</loc></url>
-
-<url><loc>https://mmm071026246-lgtm.github.io/horse/</loc></url>
-<url><loc>https://mmm071026246-lgtm.github.io/horse-blog/</loc></url>
-
-<url><loc>https://mmm071026246-lgtm.github.io/rabbit/</loc></url>
-<url><loc>https://mmm071026246-lgtm.github.io/rabbit-blod/</loc></url>
-
-<url><loc>https://mmm071026246-lgtm.github.io/reptile/</loc></url>
-<url><loc>https://mmm071026246-lgtm.github.io/reptile-blog/</loc></url>
-
-<url><loc>https://mmm071026246-lgtm.github.io/turtle/</loc></url>
-<url><loc>https://mmm071026246-lgtm.github.io/turtle-blog/</loc></url>
 
 </urlset>

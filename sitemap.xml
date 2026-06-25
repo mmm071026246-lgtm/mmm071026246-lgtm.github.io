@@ -5,7 +5,7 @@
 <!-- HOME -->
 
 <url>
-<loc>https://mmm071026246-lgtm.github.io/pet-calculators/</loc>
+<loc>https://mmm071026246-lgtm.github.io/</loc>
 <changefreq>weekly</changefreq>
 <priority>1.0</priority>
 </url>
@@ -13,13 +13,13 @@
 <!-- DOG HUB -->
 
 <url>
-<loc>https://mmm071026246-lgtm.github.io/pet-calculators/dog/</loc>
+<loc>https://mmm071026246-lgtm.github.io/dog/</loc>
 <changefreq>weekly</changefreq>
 <priority>0.95</priority>
 </url>
 
 <url>
-<loc>https://mmm071026246-lgtm.github.io/pet-calculators/dog/calculators.html</loc>
+<loc>https://mmm071026246-lgtm.github.io/dog/calculators.html</loc>
 <changefreq>weekly</changefreq>
 <priority>0.9</priority>
 </url>
@@ -27,148 +27,148 @@
 <!-- DOG BLOG HUB -->
 
 <url>
-<loc>https://mmm071026246-lgtm.github.io/pet-calculators/dog-blog/</loc>
+<loc>https://mmm071026246-lgtm.github.io/dog-blog/</loc>
 <changefreq>weekly</changefreq>
 <priority>0.9</priority>
 </url>
 
 <!-- DOG CALCULATORS -->
 
-<url><loc>https://mmm071026246-lgtm.github.io/pet-calculators/dog/dog-age-calculator.html</loc></url>
-<url><loc>https://mmm071026246-lgtm.github.io/pet-calculators/dog/dog-bmi-calculator.html</loc></url>
-<url><loc>https://mmm071026246-lgtm.github.io/pet-calculators/dog/dog-body-condition-score-calculator.html</loc></url>
-<url><loc>https://mmm071026246-lgtm.github.io/pet-calculators/dog/dog-calorie-calculator.html</loc></url>
-<url><loc>https://mmm071026246-lgtm.github.io/pet-calculators/dog/dog-daily-protein-calculator.html</loc></url>
-<url><loc>https://mmm071026246-lgtm.github.io/pet-calculators/dog/dog-due-date-calculator.html</loc></url>
-<url><loc>https://mmm071026246-lgtm.github.io/pet-calculators/dog/dog-exercise-calculator.html</loc></url>
-<url><loc>https://mmm071026246-lgtm.github.io/pet-calculators/dog/dog-feeding-schedule-calculator.html</loc></url>
-<url><loc>https://mmm071026246-lgtm.github.io/pet-calculators/dog/dog-food-calculator.html</loc></url>
-<url><loc>https://mmm071026246-lgtm.github.io/pet-calculators/dog/dog-food-cost-calculator.html</loc></url>
-<url><loc>https://mmm071026246-lgtm.github.io/pet-calculators/dog/dog-gestation-period-calculator.html</loc></url>
-<url><loc>https://mmm071026246-lgtm.github.io/pet-calculators/dog/dog-heat-cycle-calculator.html</loc></url>
-<url><loc>https://mmm071026246-lgtm.github.io/pet-calculators/dog/dog-ideal-weight-calculator.html</loc></url>
-<url><loc>https://mmm071026246-lgtm.github.io/pet-calculators/dog/dog-life-expectancy-calculator.html</loc></url>
-<url><loc>https://mmm071026246-lgtm.github.io/pet-calculators/dog/dog-pregnancy-calculator.html</loc></url>
-<url><loc>https://mmm071026246-lgtm.github.io/pet-calculators/dog/dog-pregnancy-timeline.html</loc></url>
-<url><loc>https://mmm071026246-lgtm.github.io/pet-calculators/dog/dog-pregnancy-week-calculator.html</loc></url>
-<url><loc>https://mmm071026246-lgtm.github.io/pet-calculators/dog/dog-quality-of-life-calculator.html</loc></url>
-<url><loc>https://mmm071026246-lgtm.github.io/pet-calculators/dog/dog-raw-food-calculator.html</loc></url>
-<url><loc>https://mmm071026246-lgtm.github.io/pet-calculators/dog/dog-rer-calculator.html</loc></url>
-<url><loc>https://mmm071026246-lgtm.github.io/pet-calculators/dog/dog-size-calculator.html</loc></url>
-<url><loc>https://mmm071026246-lgtm.github.io/pet-calculators/dog/dog-treat-calorie-calculator.html</loc></url>
-<url><loc>https://mmm071026246-lgtm.github.io/pet-calculators/dog/dog-walking-calorie-calculator.html</loc></url>
-<url><loc>https://mmm071026246-lgtm.github.io/pet-calculators/dog/dog-water-intake-calculator.html</loc></url>
-<url><loc>https://mmm071026246-lgtm.github.io/pet-calculators/dog/dog-weight-gain-calculator.html</loc></url>
-<url><loc>https://mmm071026246-lgtm.github.io/pet-calculators/dog/dog-weight-loss-calculator.html</loc></url>
-<url><loc>https://mmm071026246-lgtm.github.io/pet-calculators/dog/dog-years-to-human-years-chart.html</loc></url>
-<url><loc>https://mmm071026246-lgtm.github.io/pet-calculators/dog/puppy-growth-stages-month-by-month.html</loc></url>
-<url><loc>https://mmm071026246-lgtm.github.io/pet-calculators/dog/puppy-vaccination-calculator.html</loc></url>
-<url><loc>https://mmm071026246-lgtm.github.io/pet-calculators/dog/puppy-weight-calculator.html</loc></url>
-<url><loc>https://mmm071026246-lgtm.github.io/pet-calculators/dog/senior-dog-age-calculator.html</loc></url>
+<url><loc>https://mmm071026246-lgtm.github.io/dog/dog-age-calculator.html</loc></url>
+<url><loc>https://mmm071026246-lgtm.github.io/dog/dog-bmi-calculator.html</loc></url>
+<url><loc>https://mmm071026246-lgtm.github.io/dog/dog-body-condition-score-calculator.html</loc></url>
+<url><loc>https://mmm071026246-lgtm.github.io/dog/dog-calorie-calculator.html</loc></url>
+<url><loc>https://mmm071026246-lgtm.github.io/dog/dog-daily-protein-calculator.html</loc></url>
+<url><loc>https://mmm071026246-lgtm.github.io/dog/dog-due-date-calculator.html</loc></url>
+<url><loc>https://mmm071026246-lgtm.github.io/dog/dog-exercise-calculator.html</loc></url>
+<url><loc>https://mmm071026246-lgtm.github.io/dog/dog-feeding-schedule-calculator.html</loc></url>
+<url><loc>https://mmm071026246-lgtm.github.io/dog/dog-food-calculator.html</loc></url>
+<url><loc>https://mmm071026246-lgtm.github.io/dog/dog-food-cost-calculator.html</loc></url>
+<url><loc>https://mmm071026246-lgtm.github.io/dog/dog-gestation-period-calculator.html</loc></url>
+<url><loc>https://mmm071026246-lgtm.github.io/dog/dog-heat-cycle-calculator.html</loc></url>
+<url><loc>https://mmm071026246-lgtm.github.io/dog/dog-ideal-weight-calculator.html</loc></url>
+<url><loc>https://mmm071026246-lgtm.github.io/dog/dog-life-expectancy-calculator.html</loc></url>
+<url><loc>https://mmm071026246-lgtm.github.io/dog/dog-pregnancy-calculator.html</loc></url>
+<url><loc>https://mmm071026246-lgtm.github.io/dog/dog-pregnancy-timeline.html</loc></url>
+<url><loc>https://mmm071026246-lgtm.github.io/dog/dog-pregnancy-week-calculator.html</loc></url>
+<url><loc>https://mmm071026246-lgtm.github.io/dog/dog-quality-of-life-calculator.html</loc></url>
+<url><loc>https://mmm071026246-lgtm.github.io/dog/dog-raw-food-calculator.html</loc></url>
+<url><loc>https://mmm071026246-lgtm.github.io/dog/dog-rer-calculator.html</loc></url>
+<url><loc>https://mmm071026246-lgtm.github.io/dog/dog-size-calculator.html</loc></url>
+<url><loc>https://mmm071026246-lgtm.github.io/dog/dog-treat-calorie-calculator.html</loc></url>
+<url><loc>https://mmm071026246-lgtm.github.io/dog/dog-walking-calorie-calculator.html</loc></url>
+<url><loc>https://mmm071026246-lgtm.github.io/dog/dog-water-intake-calculator.html</loc></url>
+<url><loc>https://mmm071026246-lgtm.github.io/dog/dog-weight-gain-calculator.html</loc></url>
+<url><loc>https://mmm071026246-lgtm.github.io/dog/dog-weight-loss-calculator.html</loc></url>
+<url><loc>https://mmm071026246-lgtm.github.io/dog/dog-years-to-human-years-chart.html</loc></url>
+<url><loc>https://mmm071026246-lgtm.github.io/dog/puppy-growth-stages-month-by-month.html</loc></url>
+<url><loc>https://mmm071026246-lgtm.github.io/dog/puppy-vaccination-calculator.html</loc></url>
+<url><loc>https://mmm071026246-lgtm.github.io/dog/puppy-weight-calculator.html</loc></url>
+<url><loc>https://mmm071026246-lgtm.github.io/dog/senior-dog-age-calculator.html</loc></url>
 
 <!-- DOG BLOG -->
 
 <url>
-<loc>https://mmm071026246-lgtm.github.io/pet-calculators/dog-blog/how-much-food-should-i-feed-my-dog.html</loc>
+<loc>https://mmm071026246-lgtm.github.io/dog-blog/how-much-food-should-i-feed-my-dog.html</loc>
 <changefreq>monthly</changefreq>
 <priority>0.8</priority>
 </url>
 
 <url>
-<loc>https://mmm071026246-lgtm.github.io/pet-calculators/dog-blog/how-much-water-should-a-dog-drink.html</loc>
+<loc>https://mmm071026246-lgtm.github.io/dog-blog/how-much-water-should-a-dog-drink.html</loc>
 <changefreq>monthly</changefreq>
 <priority>0.8</priority>
 </url>
 
 <url>
-<loc>https://mmm071026246-lgtm.github.io/pet-calculators/dog-blog/how-to-calculate-dog-age.html</loc>
+<loc>https://mmm071026246-lgtm.github.io/dog-blog/how-to-calculate-dog-age.html</loc>
 <changefreq>monthly</changefreq>
 <priority>0.8</priority>
 </url>
 
 <url>
-<loc>https://mmm071026246-lgtm.github.io/pet-calculators/dog-blog/signs-your-dog-is-overweight.html</loc>
+<loc>https://mmm071026246-lgtm.github.io/dog-blog/signs-your-dog-is-overweight.html</loc>
 <changefreq>monthly</changefreq>
 <priority>0.8</priority>
 </url>
 
 <!-- PET CATEGORY HUBS -->
 
-<url><loc>https://mmm071026246-lgtm.github.io/pet-calculators/cat/</loc></url>
-<url><loc>https://mmm071026246-lgtm.github.io/pet-calculators/cat-blog/</loc></url>
+<url><loc>https://mmm071026246-lgtm.github.io/cat/</loc></url>
+<url><loc>https://mmm071026246-lgtm.github.io/cat-blog/</loc></url>
 
-<url><loc>https://mmm071026246-lgtm.github.io/pet-calculators/Bird/</loc></url>
-<url><loc>https://mmm071026246-lgtm.github.io/pet-calculators/Bird-blod/</loc></url>
+<url><loc>https://mmm071026246-lgtm.github.io/Bird/</loc></url>
+<url><loc>https://mmm071026246-lgtm.github.io/Bird-blod/</loc></url>
 
-<url><loc>https://mmm071026246-lgtm.github.io/pet-calculators/Fish,Aquarium/</loc></url>
-<url><loc>https://mmm071026246-lgtm.github.io/pet-calculators/Fish,Aquarium-blog/</loc></url>
+<url><loc>https://mmm071026246-lgtm.github.io/Fish,Aquarium/</loc></url>
+<url><loc>https://mmm071026246-lgtm.github.io/Fish,Aquarium-blog/</loc></url>
 <!-- MAIN PAGES -->
 
 <url>
-<loc>https://mmm071026246-lgtm.github.io/pet-calculators/calculators.html</loc>
+<loc>https://mmm071026246-lgtm.github.io/calculators.html</loc>
 <changefreq>weekly</changefreq>
 <priority>0.9</priority>
 </url>
 
 <url>
-<loc>https://mmm071026246-lgtm.github.io/pet-calculators/guides.html</loc>
+<loc>https://mmm071026246-lgtm.github.io/guides.html</loc>
 <changefreq>weekly</changefreq>
 <priority>0.9</priority>
 </url>
 
 <url>
-<loc>https://mmm071026246-lgtm.github.io/pet-calculators/about.html</loc>
+<loc>https://mmm071026246-lgtm.github.io/about.html</loc>
 <changefreq>yearly</changefreq>
 <priority>0.4</priority>
 </url>
 
 <url>
-<loc>https://mmm071026246-lgtm.github.io/pet-calculators/contact.html</loc>
+<loc>https://mmm071026246-lgtm.github.io/contact.html</loc>
 <changefreq>yearly</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
-<loc>https://mmm071026246-lgtm.github.io/pet-calculators/privacy-policy.html</loc>
+<loc>https://mmm071026246-lgtm.github.io/privacy-policy.html</loc>
 <changefreq>yearly</changefreq>
 <priority>0.2</priority>
 </url>
 
 <url>
-<loc>https://mmm071026246-lgtm.github.io/pet-calculators/terms.html</loc>
+<loc>https://mmm071026246-lgtm.github.io/terms.html</loc>
 <changefreq>yearly</changefreq>
 <priority>0.2</priority>
 </url>
 <!-- PET HUBS -->
 
-<url><loc>https://mmm071026246-lgtm.github.io/pet-calculators/bird/</loc></url>
-<url><loc>https://mmm071026246-lgtm.github.io/pet-calculators/bird-blod/</loc></url>
+<url><loc>https://mmm071026246-lgtm.github.io/bird/</loc></url>
+<url><loc>https://mmm071026246-lgtm.github.io/bird-blod/</loc></url>
 
-<url><loc>https://mmm071026246-lgtm.github.io/pet-calculators/cat/</loc></url>
-<url><loc>https://mmm071026246-lgtm.github.io/pet-calculators/cat-blog/</loc></url>
+<url><loc>https://mmm071026246-lgtm.github.io/cat/</loc></url>
+<url><loc>https://mmm071026246-lgtm.github.io/cat-blog/</loc></url>
 
-<url><loc>https://mmm071026246-lgtm.github.io/pet-calculators/dog/</loc></url>
-<url><loc>https://mmm071026246-lgtm.github.io/pet-calculators/dog-blog/</loc></url>
+<url><loc>https://mmm071026246-lgtm.github.io/dog/</loc></url>
+<url><loc>https://mmm071026246-lgtm.github.io/dog-blog/</loc></url>
 
-<url><loc>https://mmm071026246-lgtm.github.io/pet-calculators/fish,Aquarium/</loc></url>
-<url><loc>https://mmm071026246-lgtm.github.io/pet-calculators/fish,Aquarium-blog/</loc></url>
+<url><loc>https://mmm071026246-lgtm.github.io/fish,Aquarium/</loc></url>
+<url><loc>https://mmm071026246-lgtm.github.io/fish,Aquarium-blog/</loc></url>
 
-<url><loc>https://mmm071026246-lgtm.github.io/pet-calculators/guinea%20Pig/</loc></url>
-<url><loc>https://mmm071026246-lgtm.github.io/pet-calculators/guinea%20Pig-blog/</loc></url>
+<url><loc>https://mmm071026246-lgtm.github.io/guinea%20Pig/</loc></url>
+<url><loc>https://mmm071026246-lgtm.github.io/guinea%20Pig-blog/</loc></url>
 
-<url><loc>https://mmm071026246-lgtm.github.io/pet-calculators/hamster/</loc></url>
-<url><loc>https://mmm071026246-lgtm.github.io/pet-calculators/hamster-blog/</loc></url>
+<url><loc>https://mmm071026246-lgtm.github.io/hamster/</loc></url>
+<url><loc>https://mmm071026246-lgtm.github.io/hamster-blog/</loc></url>
 
-<url><loc>https://mmm071026246-lgtm.github.io/pet-calculators/horse/</loc></url>
-<url><loc>https://mmm071026246-lgtm.github.io/pet-calculators/horse-blog/</loc></url>
+<url><loc>https://mmm071026246-lgtm.github.io/horse/</loc></url>
+<url><loc>https://mmm071026246-lgtm.github.io/horse-blog/</loc></url>
 
-<url><loc>https://mmm071026246-lgtm.github.io/pet-calculators/rabbit/</loc></url>
-<url><loc>https://mmm071026246-lgtm.github.io/pet-calculators/rabbit-blod/</loc></url>
+<url><loc>https://mmm071026246-lgtm.github.io/rabbit/</loc></url>
+<url><loc>https://mmm071026246-lgtm.github.io/rabbit-blod/</loc></url>
 
-<url><loc>https://mmm071026246-lgtm.github.io/pet-calculators/reptile/</loc></url>
-<url><loc>https://mmm071026246-lgtm.github.io/pet-calculators/reptile-blog/</loc></url>
+<url><loc>https://mmm071026246-lgtm.github.io/reptile/</loc></url>
+<url><loc>https://mmm071026246-lgtm.github.io/reptile-blog/</loc></url>
 
-<url><loc>https://mmm071026246-lgtm.github.io/pet-calculators/turtle/</loc></url>
-<url><loc>https://mmm071026246-lgtm.github.io/pet-calculators/turtle-blog/</loc></url>
+<url><loc>https://mmm071026246-lgtm.github.io/turtle/</loc></url>
+<url><loc>https://mmm071026246-lgtm.github.io/turtle-blog/</loc></url>
 
 </urlset>

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+
+<script type="application/ld+json">
+{
+ "@context":"https://schema.org",
+ "@type":"FAQPage",
+ "mainEntity":[
+  {
+   "@type":"Question",
+   "name":"What is RER for dogs?",
+   "acceptedAnswer":{
+    "@type":"Answer",
+    "text":"RER stands for Resting Energy Requirement, the calories a dog needs while resting."
+   }
+  },
+  {
+   "@type":"Question",
+   "name":"How is RER calculated?",
+   "acceptedAnswer":{
+    "@type":"Answer",
+    "text":"RER is commonly calculated as 70 × body weight in kilograms raised to the power of 0.75."
+   }
+  },
+  {
+   "@type":"Question",
+   "name":"Is RER the same as daily calorie needs?",
+   "acceptedAnswer":{
+    "@type":"Answer",
+    "text":"No. Daily calorie requirements are usually higher because activity level must be considered."
+   }
+  }
+ ]
+}
+</script>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Dog RER Calculator | Resting Energy Requirement</title>
+
+<meta name="description" content="Free Dog RER Calculator. Calculate your dog's Resting Energy Requirement (RER) based on body weight.">
+
+<meta name="robots" content="index,follow">
+
+<link rel="canonical" href="https://mmm071026246-lgtm.github.io/dog-blog/dog-rer-calculator.html">
+
+<style>
+body{
+font-family:Arial,sans-serif;
+max-width:800px;
+margin:auto;
+padding:20px;
+line-height:1.7;
+}
+
+input,button{
+padding:10px;
+font-size:16px;
+margin-top:10px;
+}
+
+.result{
+margin-top:20px;
+font-size:22px;
+font-weight:bold;
+}
+
+a{
+text-decoration:none;
+color:#2563eb;
+}
+</style>
+
+</head>
+<body>
+
+<a href="/dog-blog/index.html">← Home</a>
+
+<h1>Dog Resting Energy Requirement (RER) Calculator</h1>
+
+<p>
+Calculate your dog's estimated Resting Energy Requirement (RER).
+RER represents the calories needed to maintain basic body functions while resting.
+</p>
+
+<label>Dog Weight (kg)</label><br> <input type="number" id="weight" min="0.1" step="0.1">
+
+<br><br>
+
+<button onclick="calculateRER()">
+Calculate RER
+</button>
+
+<div id="result" class="result"></div>
+
+<h2>What Is RER?</h2>
+
+<p>
+Resting Energy Requirement is commonly used by veterinarians as the starting point for estimating daily calorie needs.
+Activity level, age, reproductive status, and health conditions may increase calorie requirements above the RER value.
+</p>
+
+<h2>RER Formula</h2>
+
+<p>
+RER = 70 × (Body Weight in kg)<sup>0.75</sup>
+</p>
+
+<h2>Related Calculators</h2>
+
+<ul>
+<li><a href="/dog-blog/dog-calorie-calculator.html">Dog Calorie Calculator</a></li>
+<li><a href="/dog-blog/dog-food-calculator.html">Dog Food Calculator</a></li>
+<li><a href="/dog-blog/dog-weight-loss-calculator.html">Dog Weight Loss Calculator</a></li>
+<li><a href="/dog-blog/dog-bmi-calculator.html">Dog BMI Calculator</a></li>
+<li><a href="/dog-blog/ideal-dog-weight-calculator.html">Ideal Dog Weight Calculator</a></li>
+</ul>
+
+<h2>Related Guides</h2>
+
+<ul>
+<li><a href="/dog-blog/how-much-food-should-i-feed-my-dog.html">How Much Food Should I Feed My Dog?</a></li>
+<li><a href="/dog-blog/signs-your-dog-is-overweight.html">Signs Your Dog Is Overweight</a></li>
+</ul>
+
+<script>
+function calculateRER(){
+
+let weight=parseFloat(document.getElementById("weight").value);
+
+if(isNaN(weight)||weight<=0){
+document.getElementById("result").innerHTML=
+"Please enter a valid weight.";
+return;
+}
+
+let rer=70*Math.pow(weight,0.75);
+
+document.getElementById("result").innerHTML=
+"Estimated RER: "+rer.toFixed(0)+" kcal/day";
+}
+</script>
+
+</body>
+</html>

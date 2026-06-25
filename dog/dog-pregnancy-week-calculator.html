@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+
+<script type="application/ld+json">
+{
+ "@context":"https://schema.org",
+ "@type":"FAQPage",
+ "mainEntity":[
+  {
+   "@type":"Question",
+   "name":"How long is a dog pregnancy?",
+   "acceptedAnswer":{
+    "@type":"Answer",
+    "text":"Most dog pregnancies last approximately 63 days from conception."
+   }
+  },
+  {
+   "@type":"Question",
+   "name":"Can the due date vary?",
+   "acceptedAnswer":{
+    "@type":"Answer",
+    "text":"Yes. Actual delivery dates may vary by several days depending on breed and individual factors."
+   }
+  },
+  {
+   "@type":"Question",
+   "name":"When can a veterinarian confirm pregnancy?",
+   "acceptedAnswer":{
+    "@type":"Answer",
+    "text":"Pregnancy can often be confirmed by ultrasound around 25 to 30 days after breeding."
+   }
+  }
+ ]
+}
+</script>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Dog Pregnancy Week Calculator | Calculate Current Pregnancy Week</title>
+
+<meta name="description" content="Free Dog Pregnancy Week Calculator. Find out how many weeks pregnant your dog is and estimate the expected due date.">
+
+<meta name="keywords" content="dog pregnancy week calculator,dog gestation calculator,dog pregnancy tracker">
+
+<meta name="robots" content="index,follow">
+
+<link rel="canonical" href="https://mmm071026246-lgtm.github.io/dog-blog/dog-pregnancy-week-calculator.html">
+
+<style>
+body{
+    font-family:Arial,sans-serif;
+    max-width:800px;
+    margin:auto;
+    padding:20px;
+    line-height:1.7;
+    color:#333;
+}
+
+h1,h2,h3{
+    color:#222;
+}
+
+input,button{
+    padding:10px;
+    font-size:16px;
+    margin-top:10px;
+}
+
+button{
+    cursor:pointer;
+}
+
+.result{
+    margin-top:20px;
+    font-size:20px;
+    font-weight:bold;
+}
+
+a{
+    color:#2563eb;
+    text-decoration:none;
+}
+
+a:hover{
+    text-decoration:underline;
+}
+
+footer{
+    margin-top:50px;
+    text-align:center;
+    color:#666;
+}
+
+ul{
+    padding-left:20px;
+}
+</style>
+
+</head>
+
+<body>
+
+<a href="/dog-blog/index.html">← Home</a>
+
+<h1>Dog Pregnancy Week Calculator</h1>
+
+<p>
+Use this calculator to estimate how many weeks pregnant your dog is based on the mating date.
+Most canine pregnancies last approximately 63 days.
+</p>
+
+<label for="matingDate">Mating Date</label><br> <input type="date" id="matingDate">
+
+<br><br>
+
+<button onclick="calculateWeek()">
+Calculate Pregnancy Week
+</button>
+
+<div id="result" class="result"></div>
+
+<h2>Dog Pregnancy Timeline</h2>
+
+<ul>
+<li>Week 1–2: Fertilization and embryo development</li>
+<li>Week 3–4: Embryo implantation and early growth</li>
+<li>Week 5–6: Rapid puppy development</li>
+<li>Week 7–8: Noticeable abdominal enlargement</li>
+<li>Week 9: Delivery preparation and whelping</li>
+</ul>
+
+<h2>Why Track Pregnancy Weeks?</h2>
+
+<p>
+Knowing your dog's current pregnancy stage can help you prepare for veterinary visits, nutritional changes, and the arrival of puppies.
+</p>
+
+<h2>Frequently Asked Questions</h2>
+
+<h3>How long is a dog pregnancy?</h3>
+
+<p>
+Most dog pregnancies last approximately 63 days from conception.
+</p>
+
+<h3>Can the due date vary?</h3>
+
+<p>
+Yes. Actual delivery dates may vary by several days depending on breed and individual factors.
+</p>
+
+<h3>When can a veterinarian confirm pregnancy?</h3>
+
+<p>
+Pregnancy can often be confirmed by ultrasound around 25 to 30 days after breeding.
+</p>
+
+<h2>Related Calculators</h2>
+
+<ul>
+<li><a href="/dog-blog/dog-pregnancy-calculator.html">Dog Pregnancy Calculator</a></li>
+<li><a href="/dog-blog/puppy-weight-calculator.html">Puppy Weight Calculator</a></li>
+<li><a href="/dog-blog/dog-food-calculator.html">Dog Food Calculator</a></li>
+<li><a href="/dog-blog/dog-calorie-calculator.html">Dog Calorie Calculator</a></li>
+</ul>
+
+<h2>Related Guides</h2>
+
+<ul>
+<li><a href="/dog-blog/dog-pregnancy-timeline.html">Dog Pregnancy Timeline</a></li>
+<li><a href="/dog-blog/puppy-growth-stages-month-by-month.html">Puppy Growth Stages Month by Month</a></li>
+</ul>
+
+<script>
+function calculateWeek(){
+
+    const matingDate =
+    document.getElementById("matingDate").value;
+
+    if(!matingDate){
+        document.getElementById("result").innerHTML =
+        "Please select a mating date.";
+        return;
+    }
+
+    const mating = new Date(matingDate);
+    const today = new Date();
+
+    const diffDays =
+    Math.floor((today - mating) / (1000 * 60 * 60 * 24));
+
+    if(diffDays < 0){
+        document.getElementById("result").innerHTML =
+        "Mating date cannot be in the future.";
+        return;
+    }
+
+    const week =
+    Math.floor(diffDays / 7) + 1;
+
+    const dueDate = new Date(mating);
+    dueDate.setDate(dueDate.getDate() + 63);
+
+    document.getElementById("result").innerHTML =
+    "Current Pregnancy Week: Week " + week +
+    "<br>Estimated Due Date: " +
+    dueDate.toDateString();
+}
+</script>
+
+<hr>
+
+<footer>
+
+<p>
+<a href="/dog-blog/index.html">Home</a> |
+<a href="/dog-blog/calculators.html">Calculators</a> |
+<a href="/dog-blog/guides.html">Guides</a> |
+<a href="/dog-blog/about.html">About Us</a> |
+<a href="/dog-blog/contact.html">Contact</a> |
+<a href="/dog-blog/privacy-policy.html">Privacy Policy</a> |
+<a href="/dog-blog/terms.html">Terms of Service</a>
+</p>
+
+<p>
+Pet Calculators. All rights reserved.
+</p>
+
+</footer>
+
+</body>
+</html>

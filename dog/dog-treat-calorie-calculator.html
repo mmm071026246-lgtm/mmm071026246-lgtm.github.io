@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<script type="application/ld+json">
+{
+ "@context":"https://schema.org",
+ "@type":"FAQPage",
+ "mainEntity":[
+  {
+   "@type":"Question",
+   "name":"How many treat calories should a dog eat?",
+   "acceptedAnswer":{
+    "@type":"Answer",
+    "text":"Treats should generally make up no more than 10% of a dog's daily calorie intake."
+   }
+  },
+  {
+   "@type":"Question",
+   "name":"Can too many treats cause weight gain?",
+   "acceptedAnswer":{
+    "@type":"Answer",
+    "text":"Yes. Excess treats can contribute to obesity and nutritional imbalance."
+   }
+  },
+  {
+   "@type":"Question",
+   "name":"Are low-calorie treats better?",
+   "acceptedAnswer":{
+    "@type":"Answer",
+    "text":"Low-calorie treats may help maintain a healthy weight when used appropriately."
+   }
+  }
+ ]
+}
+</script>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Dog Treat Calorie Calculator</title>
+
+<meta name="description" content="Free Dog Treat Calorie Calculator. Estimate how many calories from treats your dog can have each day.">
+
+<meta name="robots" content="index,follow">
+
+<link rel="canonical" href="https://mmm071026246-lgtm.github.io/pet-calculators/dog-treat-calorie-calculator.html">
+
+<style>
+body{
+font-family:Arial,sans-serif;
+max-width:800px;
+margin:auto;
+padding:20px;
+line-height:1.7;
+}
+
+input,button{
+padding:10px;
+font-size:16px;
+margin-top:10px;
+}
+
+.result{
+margin-top:20px;
+font-size:22px;
+font-weight:bold;
+}
+
+a{
+text-decoration:none;
+color:#2563eb;
+}
+</style>
+
+</head>
+<body>
+
+<a href="index.html">← Home</a>
+
+<h1>Dog Treat Calorie Calculator</h1>
+
+<p>
+Estimate how many calories from treats your dog can have each day.
+A common guideline is that treats should not exceed 10% of total daily calorie intake.
+</p>
+
+<label>Daily Calorie Requirement (kcal)</label><br>
+<input type="number" id="calories" min="1">
+
+<br><br>
+
+<button onclick="calculateTreats()">
+Calculate Treat Calories
+</button>
+
+<div id="result" class="result"></div>
+
+<h2>Why Limit Treat Calories?</h2>
+
+<p>
+Treats are useful for training and rewards, but too many treats can lead to weight gain and obesity.
+Keeping treats below 10% of daily calories helps maintain balanced nutrition.
+</p>
+
+<h2>Related Calculators</h2>
+
+<ul>
+<li><a href="dog-calorie-calculator.html">Dog Calorie Calculator</a></li>
+<li><a href="dog-rer-calculator.html">Dog RER Calculator</a></li>
+<li><a href="dog-food-calculator.html">Dog Food Calculator</a></li>
+<li><a href="dog-weight-loss-calculator.html">Dog Weight Loss Calculator</a></li>
+<li><a href="ideal-dog-weight-calculator.html">Ideal Dog Weight Calculator</a></li>
+</ul>
+
+<h2>Related Guides</h2>
+
+<ul>
+<li><a href="how-much-food-should-i-feed-my-dog.html">How Much Food Should I Feed My Dog?</a></li>
+<li><a href="signs-your-dog-is-overweight.html">Signs Your Dog Is Overweight</a></li>
+</ul>
+
+<script>
+function calculateTreats(){
+
+let calories=parseFloat(document.getElementById("calories").value);
+
+if(isNaN(calories)||calories<=0){
+document.getElementById("result").innerHTML=
+"Please enter a valid calorie amount.";
+return;
+}
+
+let treats=calories*0.10;
+
+document.getElementById("result").innerHTML=
+"Recommended Maximum Treat Calories: "+
+treats.toFixed(0)+" kcal/day";
+}
+</script>
+
+</body>
+</html>

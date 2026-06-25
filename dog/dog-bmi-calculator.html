@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+
+<script type="application/ld+json">
+{
+ "@context":"https://schema.org",
+ "@type":"FAQPage",
+ "mainEntity":[
+  {
+   "@type":"Question",
+   "name":"What is a healthy BMI for dogs?",
+   "acceptedAnswer":{
+    "@type":"Answer",
+    "text":"There is no universal BMI standard for dogs. Results should be used as a general estimate alongside body condition scoring."
+   }
+  },
+  {
+   "@type":"Question",
+   "name":"Can BMI determine if my dog is overweight?",
+   "acceptedAnswer":{
+    "@type":"Answer",
+    "text":"BMI can provide a rough estimate, but a veterinarian should evaluate your dog's overall body condition."
+   }
+  },
+  {
+   "@type":"Question",
+   "name":"Do different breeds have different ideal weights?",
+   "acceptedAnswer":{
+    "@type":"Answer",
+    "text":"Yes. Breed size and body structure can significantly affect healthy weight ranges."
+   }
+  }
+ ]
+}
+</script>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Dog BMI Calculator | Check If Your Dog Is Overweight</title>
+
+<meta name="description" content="Free Dog BMI Calculator. Estimate whether your dog may be underweight, healthy, or overweight based on weight and height.">
+
+<meta name="robots" content="index,follow">
+
+<link rel="canonical" href="https://mmm071026246-lgtm.github.io/pet-calculators/dog/dog-bmi-calculator.html">
+
+<style>
+body{
+    font-family:Arial,sans-serif;
+    max-width:800px;
+    margin:auto;
+    padding:20px;
+    line-height:1.7;
+    color:#333;
+}
+
+input,button{
+    padding:10px;
+    font-size:16px;
+    margin-top:10px;
+}
+
+button{
+    cursor:pointer;
+}
+
+.result{
+    margin-top:20px;
+    font-size:22px;
+    font-weight:bold;
+}
+
+a{
+    color:#2563eb;
+    text-decoration:none;
+}
+
+a:hover{
+    text-decoration:underline;
+}
+
+footer{
+    margin-top:50px;
+    text-align:center;
+    color:#666;
+}
+</style>
+
+</head>
+
+<body>
+
+<a href="../index.html">← Home</a>
+
+<h1>Dog BMI Calculator</h1>
+
+<p>
+Estimate your dog's body condition using weight and height measurements.
+This calculator provides a simple BMI-style estimate and should not replace veterinary evaluation.
+</p>
+
+<label>Weight (kg)</label><br> <input type="number" id="weight" min="0.1" step="0.1">
+
+<br><br>
+
+<label>Height (cm)</label><br> <input type="number" id="height" min="1" step="0.1">
+
+<br><br>
+
+<button onclick="calculateBMI()">Calculate BMI</button>
+
+<div class="result" id="result"></div>
+
+<h2>What Does Dog BMI Mean?</h2>
+
+<p>
+BMI estimates whether a dog may be underweight, within a healthy range, or overweight.
+Because dogs vary greatly by breed, results should be used as a guideline only.
+</p>
+
+<h2>Related Calculators</h2>
+
+<ul>
+<li><a href="dog-food-calculator.html">Dog Food Calculator</a></li>
+<li><a href="dog-calorie-calculator.html">Dog Calorie Calculator</a></li>
+<li><a href="dog-water-intake-calculator.html">Dog Water Intake Calculator</a></li>
+<li><a href="dog-age-calculator.html">Dog Age Calculator</a></li>
+</ul>
+
+<h2>Related Guides</h2>
+
+<ul>
+<li><a href="../dog-blog/signs-your-dog-is-overweight.html">Signs Your Dog Is Overweight</a></li>
+<li><a href="../dog-blog/how-much-food-should-i-feed-my-dog.html">How Much Food Should I Feed My Dog?</a></li>
+<li><a href="../dog-blog/how-much-water-should-a-dog-drink.html">How Much Water Should a Dog Drink?</a></li>
+</ul>
+
+<h2>Frequently Asked Questions</h2>
+
+<h3>Is Dog BMI accurate?</h3>
+<p>
+Dog BMI is only a rough estimate. Body condition scoring and veterinary evaluation provide a more accurate assessment of a dog's healthy weight.
+</p>
+
+<h3>Can large breeds use the same BMI scale?</h3>
+<p>
+No. Different breeds have different body structures, so BMI results should be interpreted cautiously.
+</p>
+
+<h3>Should I contact a veterinarian?</h3>
+<p>
+Yes. If you are concerned about your dog's weight, consult a licensed veterinarian for professional advice.
+</p>
+
+<script>
+function calculateBMI(){
+
+let weight = parseFloat(document.getElementById("weight").value);
+let height = parseFloat(document.getElementById("height").value);
+
+if(isNaN(weight) || isNaN(height) || weight <= 0 || height <= 0){
+    document.getElementById("result").innerHTML =
+    "Please enter valid values.";
+    return;
+}
+
+let bmi = weight / Math.pow(height / 100, 2);
+
+let category = "";
+
+if(bmi < 15){
+    category = "Underweight";
+}else if(bmi < 30){
+    category = "Healthy Weight";
+}else{
+    category = "Overweight";
+}
+
+document.getElementById("result").innerHTML =
+"Estimated BMI: " + bmi.toFixed(1) + " (" + category + ")";
+}
+</script>
+
+<footer>
+
+<hr>
+
+<p>
+<a href="../index.html">Home</a> |
+<a href="../calculators.html">Calculators</a> |
+<a href="../guides.html">Guides</a> |
+<a href="../about.html">About</a> |
+<a href="../privacy-policy.html">Privacy Policy</a>
+</p>
+
+<p>Pet Calculators</p>
+
+</footer>
+
+</body>
+</html>

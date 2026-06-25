@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<script type="application/ld+json">
+{
+ "@context":"https://schema.org",
+ "@type":"FAQPage",
+ "mainEntity":[
+  {
+   "@type":"Question",
+   "name":"When should a dog gain weight?",
+   "acceptedAnswer":{
+    "@type":"Answer",
+    "text":"Weight gain may be recommended for underweight dogs, recovering dogs, or dogs advised by a veterinarian."
+   }
+  },
+  {
+   "@type":"Question",
+   "name":"How quickly should a dog gain weight?",
+   "acceptedAnswer":{
+    "@type":"Answer",
+    "text":"Healthy weight gain should generally occur gradually and under proper nutritional guidance."
+   }
+  },
+  {
+   "@type":"Question",
+   "name":"Can this calculator replace veterinary advice?",
+   "acceptedAnswer":{
+    "@type":"Answer",
+    "text":"No. This calculator provides estimates only and should not replace professional veterinary care."
+   }
+  }
+ ]
+}
+</script>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Dog Weight Gain Calculator | Healthy Weight Gain Planner</title>
+
+<meta name="description" content="Free Dog Weight Gain Calculator. Estimate how much weight your dog needs to gain and how long it may take to reach a healthy target weight.">
+
+<meta name="keywords" content="dog weight gain calculator,underweight dog calculator,dog healthy weight,dog nutrition calculator">
+
+<meta name="robots" content="index,follow">
+
+<link rel="canonical" href="https://mmm071026246-lgtm.github.io/pet-calculators/dog-weight-gain-calculator.html">
+
+<style>
+body{
+    font-family:Arial,sans-serif;
+    max-width:800px;
+    margin:auto;
+    padding:20px;
+    line-height:1.7;
+    color:#333;
+}
+
+input,button{
+    padding:10px;
+    font-size:16px;
+    margin-top:10px;
+}
+
+button{
+    cursor:pointer;
+}
+
+.result{
+    margin-top:20px;
+    font-size:22px;
+    font-weight:bold;
+}
+
+a{
+    text-decoration:none;
+    color:#2563eb;
+}
+
+a:hover{
+    text-decoration:underline;
+}
+
+footer{
+    margin-top:50px;
+    text-align:center;
+    color:#666;
+}
+
+ul{
+    padding-left:20px;
+}
+</style>
+
+</head>
+<body>
+
+<a href="index.html">← Home</a>
+
+<h1>Dog Weight Gain Calculator</h1>
+
+<p>
+Use this free Dog Weight Gain Calculator to estimate how much weight your dog may need to gain and approximately how long it could take to reach a target weight.
+</p>
+
+<label for="currentWeight">Current Weight (kg)</label><br>
+<input type="number" id="currentWeight" min="0.1" step="0.1">
+
+<br><br>
+
+<label for="targetWeight">Target Weight (kg)</label><br>
+<input type="number" id="targetWeight" min="0.1" step="0.1">
+
+<br><br>
+
+<button onclick="calculateWeightGain()">
+Calculate Weight Gain
+</button>
+
+<div class="result" id="result"></div>
+
+<h2>How Does Dog Weight Gain Work?</h2>
+
+<p>
+Healthy weight gain should occur gradually through proper nutrition, adequate calorie intake, and veterinary guidance when needed.
+</p>
+
+<h2>Possible Causes of Low Body Weight</h2>
+
+<ul>
+<li>Insufficient calorie intake</li>
+<li>High activity levels</li>
+<li>Recent illness or recovery</li>
+<li>Poor nutrient absorption</li>
+<li>Underlying medical conditions</li>
+</ul>
+
+<h2>Tips for Healthy Weight Gain</h2>
+
+<ul>
+<li>Feed high-quality dog food.</li>
+<li>Increase calories gradually.</li>
+<li>Provide multiple meals per day.</li>
+<li>Monitor body condition regularly.</li>
+<li>Consult your veterinarian if weight loss is unexplained.</li>
+</ul>
+
+<h2>Related Calculators</h2>
+
+<ul>
+<li><a href="dog-ideal-weight-calculator.html">Dog Ideal Weight Calculator</a></li>
+<li><a href="dog-weight-loss-calculator.html">Dog Weight Loss Calculator</a></li>
+<li><a href="dog-calorie-calculator.html">Dog Calorie Calculator</a></li>
+<li><a href="dog-food-calculator.html">Dog Food Calculator</a></li>
+<li><a href="dog-bmi-calculator.html">Dog BMI Calculator</a></li>
+</ul>
+
+<h2>Related Articles</h2>
+
+<ul>
+<li><a href="how-much-food-should-i-feed-my-dog.html">How Much Food Should I Feed My Dog?</a></li>
+<li><a href="signs-your-dog-is-overweight.html">Signs Your Dog Is Overweight</a></li>
+<li><a href="puppy-growth-stages-month-by-month.html">Puppy Growth Stages Month by Month</a></li>
+</ul>
+
+<h2>Frequently Asked Questions</h2>
+
+<h3>When should a dog gain weight?</h3>
+<p>
+Weight gain may be appropriate for underweight dogs or dogs recovering from illness, depending on veterinary recommendations.
+</p>
+
+<h3>How quickly should a dog gain weight?</h3>
+<p>
+Gradual weight gain is generally safer and healthier than rapid increases in body weight.
+</p>
+
+<h3>Can this calculator replace veterinary advice?</h3>
+<p>
+No. This calculator is intended for educational purposes only.
+</p>
+
+<script>
+function calculateWeightGain(){
+
+    let current =
+    parseFloat(document.getElementById("currentWeight").value);
+
+    let target =
+    parseFloat(document.getElementById("targetWeight").value);
+
+    if(
+        isNaN(current) ||
+        isNaN(target) ||
+        current <= 0 ||
+        target <= 0 ||
+        target <= current
+    ){
+        document.getElementById("result").innerHTML =
+        "Please enter valid values. Target weight must be higher than current weight.";
+        return;
+    }
+
+    let gainNeeded = target - current;
+
+    let weeks =
+    gainNeeded / (current * 0.01);
+
+    document.getElementById("result").innerHTML =
+    "Weight To Gain: " +
+    gainNeeded.toFixed(1) +
+    " kg<br>" +
+    "Estimated Time: " +
+    Math.ceil(weeks) +
+    " weeks";
+}
+</script>
+
+<footer>
+
+<hr>
+
+<p>
+<a href="index.html">Home</a> |
+<a href="calculators.html">Calculators</a> |
+<a href="guides.html">Guides</a> |
+<a href="about.html">About</a> |
+<a href="contact.html">Contact</a>
+</p>
+
+<p>
+© 2025 Pet Calculators. All rights reserved.
+</p>
+
+</footer>
+
+</body>
+</html>

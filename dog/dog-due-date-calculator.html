@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+
+<script type="application/ld+json">
+{
+ "@context":"https://schema.org",
+ "@type":"FAQPage",
+ "mainEntity":[
+  {
+   "@type":"Question",
+   "name":"How long is a dog's pregnancy?",
+   "acceptedAnswer":{
+    "@type":"Answer",
+    "text":"Most dogs are pregnant for approximately 63 days from ovulation, although normal pregnancies may range from 58 to 68 days."
+   }
+  },
+  {
+   "@type":"Question",
+   "name":"Is the due date exact?",
+   "acceptedAnswer":{
+    "@type":"Answer",
+    "text":"No. The calculated due date is an estimate and actual delivery may occur several days earlier or later."
+   }
+  },
+  {
+   "@type":"Question",
+   "name":"Should I contact a veterinarian during pregnancy?",
+   "acceptedAnswer":{
+    "@type":"Answer",
+    "text":"Yes. Regular veterinary care is recommended throughout pregnancy to monitor the health of the mother and puppies."
+   }
+  }
+ ]
+}
+</script>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Dog Due Date Calculator | Estimate Puppy Delivery Date</title>
+
+<meta name="description" content="Free Dog Due Date Calculator. Estimate your dog's expected puppy delivery date based on breeding or ovulation date.">
+
+<meta name="keywords" content="dog due date calculator,dog pregnancy calculator,puppy due date,dog gestation calculator">
+
+<meta name="robots" content="index,follow">
+
+<link rel="canonical" href="https://mmm071026246-lgtm.github.io/dog-blog/dog-due-date-calculator.html">
+
+<style>
+body{
+    font-family:Arial,sans-serif;
+    max-width:800px;
+    margin:auto;
+    padding:20px;
+    line-height:1.7;
+    color:#333;
+}
+
+input,button{
+    padding:10px;
+    font-size:16px;
+    margin-top:10px;
+}
+
+button{
+    cursor:pointer;
+}
+
+.result{
+    margin-top:20px;
+    font-size:22px;
+    font-weight:bold;
+}
+
+a{
+    text-decoration:none;
+    color:#2563eb;
+}
+
+a:hover{
+    text-decoration:underline;
+}
+
+footer{
+    margin-top:50px;
+    text-align:center;
+    color:#666;
+}
+
+ul{
+    padding-left:20px;
+}
+</style>
+
+</head>
+<body>
+
+<a href="../index.html">← Home</a>
+
+<h1>Dog Due Date Calculator</h1>
+
+<p>
+Use this free Dog Due Date Calculator to estimate when your dog may give birth. Most canine pregnancies last approximately 63 days from ovulation.
+</p>
+
+<label for="breedDate">Breeding Date</label><br> <input type="date" id="breedDate">
+
+<br><br>
+
+<button onclick="calculateDueDate()">
+Calculate Due Date
+</button>
+
+<div class="result" id="result"></div>
+
+<h2>How Long Are Dogs Pregnant?</h2>
+
+<p>
+Most dog pregnancies last around 63 days, although healthy pregnancies may range from approximately 58 to 68 days depending on timing and individual variation.
+</p>
+
+<h2>Pregnancy Signs in Dogs</h2>
+
+<ul>
+<li>Reduced appetite during early pregnancy</li>
+<li>Enlarged nipples</li>
+<li>Weight gain</li>
+<li>Increased sleeping</li>
+<li>Nesting behavior near delivery</li>
+</ul>
+
+<h2>Related Calculators</h2>
+
+<ul>
+<li><a href="../dog-blog/dog-pregnancy-calculator.html">Dog Pregnancy Calculator</a></li>
+<li><a href="../dog-blog/dog-pregnancy-week-calculator.html">Dog Pregnancy Week Calculator</a></li>
+<li><a href="../dog-blog/dog-gestation-period-calculator.html">Dog Gestation Period Calculator</a></li>
+<li><a href="../dog-blog/dog-age-calculator.html">Dog Age Calculator</a></li>
+</ul>
+
+<h2>Related Articles</h2>
+
+<ul>
+<li><a href="../dog-blog/dog-pregnancy-timeline.html">Dog Pregnancy Timeline</a></li>
+<li><a href="../dog-blog/how-much-food-should-i-feed-my-dog.html">How Much Food Should I Feed My Dog?</a></li>
+<li><a href="../dog-blog/how-much-water-should-a-dog-drink.html">How Much Water Should a Dog Drink?</a></li>
+</ul>
+
+<h2>Frequently Asked Questions</h2>
+
+<h3>How long is a dog's pregnancy?</h3>
+<p>
+Most dogs are pregnant for approximately 63 days.
+</p>
+
+<h3>Is the due date exact?</h3>
+<p>
+No. The calculator provides an estimate only. Actual delivery may occur a few days before or after the predicted date.
+</p>
+
+<h3>Should I contact a veterinarian?</h3>
+<p>
+Yes. Veterinary care is important throughout pregnancy and before delivery.
+</p>
+
+<script>
+function calculateDueDate(){
+
+let breedingDate =
+document.getElementById("breedDate").value;
+
+if(!breedingDate){
+document.getElementById("result").innerHTML =
+"Please select a breeding date.";
+return;
+}
+
+let date = new Date(breedingDate);
+
+date.setDate(date.getDate() + 63);
+
+document.getElementById("result").innerHTML =
+"Estimated Due Date: " +
+date.toDateString();
+}
+</script>
+
+<footer>
+
+<hr>
+
+<p>
+<a href="../index.html">Home</a> |
+<a href="../calculators.html">Calculators</a> |
+<a href="../guides.html">Guides</a> |
+<a href="../about.html">About</a> |
+<a href="../contact.html">Contact</a>
+</p>
+
+<p>
+ Pet Calculators. All rights reserved.
+</p>
+
+</footer>
+
+</body>
+</html>

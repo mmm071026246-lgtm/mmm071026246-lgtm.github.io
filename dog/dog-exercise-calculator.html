@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+
+<script type="application/ld+json">
+{
+ "@context":"https://schema.org",
+ "@type":"FAQPage",
+ "mainEntity":[
+  {
+   "@type":"Question",
+   "name":"How much exercise does a dog need daily?",
+   "acceptedAnswer":{
+    "@type":"Answer",
+    "text":"Most healthy dogs need between 30 and 120 minutes of exercise daily depending on size, age, breed, and activity level."
+   }
+  },
+  {
+   "@type":"Question",
+   "name":"Can exercise help overweight dogs?",
+   "acceptedAnswer":{
+    "@type":"Answer",
+    "text":"Yes. Regular exercise combined with proper nutrition can support healthy weight loss and overall health."
+   }
+  },
+  {
+   "@type":"Question",
+   "name":"Do puppies need the same exercise as adult dogs?",
+   "acceptedAnswer":{
+    "@type":"Answer",
+    "text":"No. Puppies typically require shorter exercise sessions and more frequent rest periods."
+   }
+  }
+ ]
+}
+</script>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Dog Exercise Calculator | Daily Exercise Needs</title>
+
+<meta name="description" content="Free Dog Exercise Calculator. Estimate how much daily exercise your dog may need based on body weight.">
+
+<meta name="keywords" content="dog exercise calculator,dog walking calculator,daily dog exercise,dog activity">
+
+<meta name="robots" content="index,follow">
+
+<link rel="canonical" href="https://mmm071026246-lgtm.github.io/dog-blog/dog-exercise-calculator.html">
+
+<style>
+body{
+font-family:Arial,sans-serif;
+max-width:800px;
+margin:auto;
+padding:20px;
+line-height:1.7;
+}
+
+input,button{
+padding:10px;
+font-size:16px;
+margin-top:10px;
+}
+
+button{
+cursor:pointer;
+}
+
+.result{
+margin-top:20px;
+font-size:22px;
+font-weight:bold;
+}
+
+a{
+color:#2563eb;
+text-decoration:none;
+}
+
+footer{
+margin-top:50px;
+text-align:center;
+color:#666;
+}
+</style>
+
+</head>
+<body>
+
+<a href="../index.html">← Home</a>
+
+<h1>Dog Exercise Calculator</h1>
+
+<p>
+Estimate your dog's recommended daily exercise time based on body weight.
+Results are general guidelines and may vary depending on breed, age, and health condition.
+</p>
+
+<label>Dog Weight (kg)</label><br> <input type="number" id="weight" step="0.1">
+
+<br><br>
+
+<button onclick="calculateExercise()">
+Calculate Exercise Time
+</button>
+
+<div class="result" id="result"></div>
+
+<h2>Why Exercise Matters</h2>
+
+<p>
+Regular exercise helps maintain a healthy weight, improves cardiovascular health, reduces boredom, and supports mental stimulation.
+</p>
+
+<h2>Exercise Guidelines</h2>
+
+<ul>
+<li>Small dogs: 30–45 minutes daily</li>
+<li>Medium dogs: 45–60 minutes daily</li>
+<li>Large dogs: 60–120 minutes daily</li>
+</ul>
+
+<h2>Related Calculators</h2>
+
+<ul>
+<li><a href="../dog-blog/dog-weight-loss-calculator.html">Dog Weight Loss Calculator</a></li>
+<li><a href="../dog-blog/dog-calorie-calculator.html">Dog Calorie Calculator</a></li>
+<li><a href="../dog-blog/dog-food-calculator.html">Dog Food Calculator</a></li>
+<li><a href="../dog-blog/dog-water-intake-calculator.html">Dog Water Intake Calculator</a></li>
+</ul>
+
+<h2>Related Articles</h2>
+
+<ul>
+<li><a href="../dog-blog/signs-your-dog-is-overweight.html">Signs Your Dog Is Overweight</a></li>
+<li><a href="../dog-blog/how-much-food-should-i-feed-my-dog.html">How Much Food Should I Feed My Dog?</a></li>
+</ul>
+
+<h2>Frequently Asked Questions</h2>
+
+<h3>How much exercise does a dog need?</h3>
+<p>
+Most healthy dogs need between 30 and 120 minutes of exercise daily.
+</p>
+
+<h3>Can exercise help with weight loss?</h3>
+<p>
+Yes. Exercise combined with proper nutrition can help overweight dogs lose weight safely.
+</p>
+
+<h3>Do puppies need less exercise?</h3>
+<p>
+Yes. Puppies generally need shorter sessions and more rest than adult dogs.
+</p>
+
+<script>
+function calculateExercise(){
+
+let weight =
+parseFloat(document.getElementById("weight").value);
+
+if(isNaN(weight) || weight <= 0){
+document.getElementById("result").innerHTML =
+"Please enter a valid weight.";
+return;
+}
+
+let minutes;
+
+if(weight < 10){
+minutes = 30;
+}
+else if(weight < 25){
+minutes = 60;
+}
+else{
+minutes = 90;
+}
+
+document.getElementById("result").innerHTML =
+"Recommended Daily Exercise: " +
+minutes +
+" minutes";
+}
+</script>
+
+<footer>
+
+<hr>
+
+<p>
+<a href="../index.html">Home</a> |
+<a href="../calculators.html">Calculators</a> |
+<a href="../guides.html">Guides</a>
+</p>
+
+<p>
+Pet Calculators
+</p>
+
+</footer>
+
+</body>
+</html>

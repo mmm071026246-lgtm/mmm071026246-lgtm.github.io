@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta name="author" content="Pet Calculators">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Dog Age Calculator - Convert Dog Years to Human Years</title>
+
+<meta name="description" content="Free Dog Age Calculator. Convert dog years to human years instantly based on your dog's size.">
+<meta name="keywords" content="dog age calculator,dog years,human years calculator,small dog age calculator,large dog age calculator">
+<meta name="robots" content="index,follow">
+
+<link rel="canonical" href="https://mmm071026246-lgtm.github.io/pet-calculators/dog/dog-age-calculator.html">
+
+<meta property="og:title" content="Dog Age Calculator">
+<meta property="og:description" content="Convert dog years to human years instantly based on your dog's size.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://mmm071026246-lgtm.github.io/pet-calculators/dog/dog-age-calculator.html">
+
+<style>
+body{
+    font-family:Arial,sans-serif;
+    max-width:800px;
+    margin:auto;
+    padding:20px;
+    line-height:1.6;
+}
+input,button,select{
+    padding:10px;
+    font-size:16px;
+    margin:5px 0;
+}
+button{ cursor:pointer; }
+.result{
+    margin-top:20px;
+    font-size:24px;
+    font-weight:bold;
+}
+a{ text-decoration:none; }
+ul{ padding-left:20px; }
+
+/* 광고 영역 */
+.ad-box{
+    margin:25px 0;
+    padding:20px;
+    border:1px dashed #ccc;
+    text-align:center;
+    background:#fafafa;
+    font-size:14px;
+    color:#777;
+}
+</style>
+
+</head>
+
+<body>
+
+<a href="../index.html">← Home</a>
+
+<h1>Dog Age Calculator</h1>
+
+<p>
+Use this free dog age calculator to estimate your dog's age in human years.
+</p>
+
+<!-- 🔥 상단 광고 -->
+
+<div class="ad-box">Ad Space (Top Banner)</div>
+
+<label for="size">Dog Size:</label><br>
+
+<select id="size">
+<option value="small">Small Dog</option>
+<option value="medium" selected>Medium Dog</option>
+<option value="large">Large Dog</option>
+</select>
+
+<br><br>
+
+<input type="number" id="dogAge" min="0" step="0.1" placeholder="Enter dog age">
+<button onclick="calculateAge()">Calculate</button>
+
+<div class="result" id="result"></div>
+
+<!-- 🔥 결과 아래 광고 (CTR 핵심 위치) -->
+
+<div class="ad-box">Ad Space (High CTR)</div>
+
+<h2>Dog Age Explained</h2>
+<p>
+Dogs age faster than humans, especially during their first two years.
+Understanding this helps improve your dog's health and lifespan.
+</p>
+
+<h2>Why This Calculator Matters</h2>
+<p>
+Knowing your dog’s human age helps you plan better nutrition, exercise,
+and vet care routines.
+</p>
+
+<!-- 🔥 중간 광고 -->
+
+<div class="ad-box">Ad Space (In Content)</div>
+
+<h2>Related Calculators</h2>
+<ul>
+<li><a href="dog-food-calculator.html">Dog Food Calculator</a></li>
+<li><a href="dog-calorie-calculator.html">Dog Calorie Calculator</a></li>
+<li><a href="dog-water-intake-calculator.html">Dog Water Intake Calculator</a></li>
+<li><a href="dog-pregnancy-calculator.html">Dog Pregnancy Calculator</a></li>
+<li><a href="puppy-weight-calculator.html">Puppy Weight Calculator</a></li>
+<li><a href="../cat/cat-age-calculator.html">Cat Age Calculator</a></li>
+</ul>
+
+<h2>Related Articles</h2>
+<ul>
+<li><a href="../dog-blog/how-to-calculate-dog-age.html">How to Calculate Dog Age</a></li>
+<li><a href="../dog-blog/how-much-food-should-i-feed-my-dog.html">How Much Food Should I Feed My Dog?</a></li>
+<li><a href="../dog-blog/how-much-water-should-a-dog-drink.html">How Much Water Should a Dog Drink?</a></li>
+</ul>
+
+<!-- 🔥 클릭 유도 영역 -->
+
+<h2>Helpful Tips</h2>
+<p>
+Want to improve your dog's health? Check out our detailed guides above.
+They help increase lifespan and daily care quality.
+</p>
+
+<h2>FAQ</h2>
+
+<h3>Is 1 dog year = 7 human years?</h3>
+<p>No. Dogs age faster early in life.</p>
+
+<h3>Do big dogs age faster?</h3>
+<p>Yes, large breeds have shorter lifespans.</p>
+
+<h3>Can diet affect lifespan?</h3>
+<p>Absolutely. Nutrition plays a huge role.</p>
+
+<!-- 🔥 하단 광고 -->
+
+<div class="ad-box">Ad Space (Bottom Banner)</div>
+
+<footer>
+<p>&copy; Pet Calculators</p>
+</footer>
+
+<script>
+function calculateAge(){
+let age = parseFloat(document.getElementById("dogAge").value);
+let size = document.getElementById("size").value;
+
+if(isNaN(age) || age < 0){
+document.getElementById("result").innerHTML = "Please enter a valid age.";
+return;
+}
+
+let humanAge;
+
+if(age <= 1){ humanAge = 15; }
+else if(age <= 2){ humanAge = 24; }
+else{
+let yearlyRate;
+if(size === "small"){ yearlyRate = 4; }
+else if(size === "medium"){ yearlyRate = 5; }
+else{ yearlyRate = 6; }
+
+humanAge = 24 + ((age - 2) * yearlyRate);
+}
+
+document.getElementById("result").innerHTML =
+"Estimated Human Age: " + humanAge.toFixed(1) + " years";
+}
+</script>
+
+</body>
+</html>

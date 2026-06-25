@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<script type="application/ld+json">
+{
+ "@context":"https://schema.org",
+ "@type":"FAQPage",
+ "mainEntity":[
+  {
+   "@type":"Question",
+   "name":"When should puppies receive their first vaccines?",
+   "acceptedAnswer":{
+    "@type":"Answer",
+    "text":"Most puppies begin vaccinations between 6 and 8 weeks of age."
+   }
+  },
+  {
+   "@type":"Question",
+   "name":"How many puppy vaccine visits are required?",
+   "acceptedAnswer":{
+    "@type":"Answer",
+    "text":"Most puppies receive multiple vaccine visits until approximately 16 weeks of age."
+   }
+  },
+  {
+   "@type":"Question",
+   "name":"Can vaccination schedules vary?",
+   "acceptedAnswer":{
+    "@type":"Answer",
+    "text":"Yes. Your veterinarian may recommend a different schedule depending on local risks and your puppy's health."
+   }
+  }
+ ]
+}
+</script>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Puppy Vaccination Schedule Calculator | Estimate Vaccine Dates</title>
+
+<meta name="description" content="Free Puppy Vaccination Schedule Calculator. Estimate your puppy's vaccination schedule based on birth date and learn typical vaccine milestones.">
+
+<meta name="keywords" content="puppy vaccination calculator,puppy vaccine schedule,dog vaccination schedule,puppy health">
+
+<meta name="robots" content="index,follow">
+
+<link rel="canonical" href="https://mmm071026246-lgtm.github.io/pet-calculators/puppy-vaccination-calculator.html">
+
+<style>
+body{
+    font-family:Arial,sans-serif;
+    max-width:800px;
+    margin:auto;
+    padding:20px;
+    line-height:1.7;
+    color:#333;
+}
+
+h1,h2,h3{
+    color:#222;
+}
+
+input,button{
+    padding:10px;
+    font-size:16px;
+    margin-top:10px;
+}
+
+button{
+    cursor:pointer;
+}
+
+.result{
+    margin-top:20px;
+    font-size:18px;
+    font-weight:bold;
+}
+
+a{
+    text-decoration:none;
+    color:#2563eb;
+}
+
+a:hover{
+    text-decoration:underline;
+}
+
+footer{
+    margin-top:50px;
+    text-align:center;
+    color:#666;
+}
+
+ul{
+    padding-left:20px;
+}
+</style>
+
+</head>
+
+<body>
+
+<a href="index.html">← Home</a>
+
+<h1>Puppy Vaccination Schedule Calculator</h1>
+
+<p>
+Estimate important puppy vaccination milestones based on your puppy's birth date.
+Vaccination schedules may vary, so always follow your veterinarian's recommendations.
+</p>
+
+<label for="birthDate">Puppy Birth Date</label><br>
+<input type="date" id="birthDate">
+
+<br><br>
+
+<button onclick="calculateVaccines()">
+Calculate Schedule
+</button>
+
+<div id="result" class="result"></div>
+
+<h2>Typical Puppy Vaccine Timeline</h2>
+
+<p>
+Most puppies receive a series of vaccinations during the first few months of life to help protect against common infectious diseases.
+</p>
+
+<ul>
+<li>6–8 weeks: First vaccinations</li>
+<li>10–12 weeks: Booster vaccinations</li>
+<li>14–16 weeks: Final puppy boosters</li>
+</ul>
+
+<h2>Why Puppy Vaccinations Matter</h2>
+
+<p>
+Vaccinations help protect puppies from serious diseases while their immune systems are still developing.
+Keeping vaccinations up to date is an important part of responsible pet ownership.
+</p>
+
+<h2>Frequently Asked Questions</h2>
+
+<h3>When should puppies receive their first vaccines?</h3>
+
+<p>
+Most puppies begin vaccinations between 6 and 8 weeks of age.
+</p>
+
+<h3>How many puppy vaccine visits are required?</h3>
+
+<p>
+Most puppies receive multiple vaccine visits until approximately 16 weeks of age.
+</p>
+
+<h3>Can vaccination schedules vary?</h3>
+
+<p>
+Yes. Your veterinarian may recommend a different schedule depending on local disease risks and your puppy's overall health.
+</p>
+
+<h2>Related Calculators</h2>
+
+<ul>
+<li><a href="puppy-weight-calculator.html">Puppy Weight Calculator</a></li>
+<li><a href="dog-age-calculator.html">Dog Age Calculator</a></li>
+<li><a href="dog-exercise-calculator.html">Dog Exercise Calculator</a></li>
+<li><a href="dog-food-calculator.html">Dog Food Calculator</a></li>
+<li><a href="dog-calorie-calculator.html">Dog Calorie Calculator</a></li>
+</ul>
+
+<h2>Related Guides</h2>
+
+<ul>
+<li><a href="puppy-growth-stages-month-by-month.html">Puppy Growth Stages Month by Month</a></li>
+<li><a href="how-much-food-should-i-feed-my-dog.html">How Much Food Should I Feed My Dog?</a></li>
+</ul>
+
+<script>
+function calculateVaccines(){
+
+    let birth =
+    document.getElementById("birthDate").value;
+
+    if(!birth){
+        document.getElementById("result").innerHTML =
+        "Please select a birth date.";
+        return;
+    }
+
+    let date = new Date(birth);
+
+    let first = new Date(date);
+    first.setDate(first.getDate() + 56);
+
+    let second = new Date(date);
+    second.setDate(second.getDate() + 84);
+
+    let third = new Date(date);
+    third.setDate(third.getDate() + 112);
+
+    document.getElementById("result").innerHTML =
+    "First Vaccine: " + first.toDateString() + "<br>" +
+    "Booster Vaccine: " + second.toDateString() + "<br>" +
+    "Final Puppy Booster: " + third.toDateString();
+}
+</script>
+
+<hr>
+
+<footer>
+
+<p>
+<a href="index.html">Home</a> |
+<a href="calculators.html">Calculators</a> |
+<a href="guides.html">Guides</a> |
+<a href="about.html">About Us</a> |
+<a href="contact.html">Contact</a> |
+<a href="privacy-policy.html">Privacy Policy</a> |
+<a href="terms.html">Terms of Service</a>
+</p>
+
+<p>
+© 2025 Pet Calculators. All rights reserved.
+</p>
+
+</footer>
+
+</body>
+</html>

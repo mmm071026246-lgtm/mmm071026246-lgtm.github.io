@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<script type="application/ld+json">
+{
+ "@context":"https://schema.org",
+ "@type":"FAQPage",
+ "mainEntity":[
+  {
+   "@type":"Question",
+   "name":"When is a dog considered a senior?",
+   "acceptedAnswer":{
+    "@type":"Answer",
+    "text":"Many dogs are considered seniors between 7 and 10 years of age, depending on breed and size."
+   }
+  },
+  {
+   "@type":"Question",
+   "name":"Do large dogs become seniors earlier?",
+   "acceptedAnswer":{
+    "@type":"Answer",
+    "text":"Yes. Large and giant breeds often reach senior status earlier than small breeds."
+   }
+  },
+  {
+   "@type":"Question",
+   "name":"Why calculate senior dog age?",
+   "acceptedAnswer":{
+    "@type":"Answer",
+    "text":"Understanding senior status helps owners adjust nutrition, exercise, and veterinary care."
+   }
+  }
+ ]
+}
+</script>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Senior Dog Age Calculator | Is Your Dog a Senior?</title>
+
+<meta name="description" content="Free Senior Dog Age Calculator. Find out whether your dog is considered a senior based on age and size.">
+
+<meta name="robots" content="index,follow">
+
+<link rel="canonical" href="https://mmm071026246-lgtm.github.io/pet-calculators/senior-dog-age-calculator.html">
+
+<style>
+body{
+font-family:Arial,sans-serif;
+max-width:800px;
+margin:auto;
+padding:20px;
+line-height:1.7;
+}
+input,select,button{
+padding:10px;
+font-size:16px;
+margin-top:10px;
+}
+.result{
+margin-top:20px;
+font-size:20px;
+font-weight:bold;
+}
+a{
+text-decoration:none;
+color:#2563eb;
+}
+footer{
+margin-top:50px;
+text-align:center;
+color:#666;
+}
+</style>
+
+</head>
+<body>
+
+<a href="index.html">← Home</a>
+
+<h1>Senior Dog Age Calculator</h1>
+
+<p>
+Find out whether your dog may be considered a senior based on age and size category.
+</p>
+
+<label>Dog Age (years)</label><br>
+<input type="number" id="age" step="0.1">
+
+<br><br>
+
+<label>Dog Size</label><br>
+
+<select id="size">
+<option value="7">Small Dog</option>
+<option value="8">Medium Dog</option>
+<option value="7">Large Dog</option>
+<option value="6">Giant Dog</option>
+</select>
+
+<br><br>
+
+<button onclick="checkSenior()">
+Check Senior Status
+</button>
+
+<div id="result" class="result"></div>
+
+<h2>Senior Dog Care</h2>
+
+<p>
+Senior dogs may benefit from regular health screenings, age-appropriate nutrition, joint support, and adjusted exercise routines.
+</p>
+
+<h2>Related Calculators</h2>
+
+<ul>
+<li><a href="dog-age-calculator.html">Dog Age Calculator</a></li>
+<li><a href="dog-life-expectancy-calculator.html">Dog Life Expectancy Calculator</a></li>
+<li><a href="dog-calorie-calculator.html">Dog Calorie Calculator</a></li>
+</ul>
+
+<h2>Related Guides</h2>
+
+<ul>
+<li><a href="how-to-calculate-dog-age.html">How to Calculate Dog Age</a></li>
+<li><a href="how-much-food-should-i-feed-my-dog.html">How Much Food Should I Feed My Dog?</a></li>
+</ul>
+
+<h2>Frequently Asked Questions</h2>
+
+<h3>When is a dog considered a senior?</h3>
+<p>
+Many dogs are considered seniors between 7 and 10 years of age depending on breed and size.
+</p>
+
+<h3>Do large dogs become seniors earlier?</h3>
+<p>
+Yes. Large and giant breeds often age faster and may become seniors earlier.
+</p>
+
+<h3>Why calculate senior dog age?</h3>
+<p>
+Understanding senior status can help owners provide appropriate care and nutrition.
+</p>
+
+<script>
+function checkSenior(){
+
+let age=parseFloat(document.getElementById("age").value);
+let seniorAge=parseFloat(document.getElementById("size").value);
+
+if(isNaN(age)||age<0){
+document.getElementById("result").innerHTML=
+"Please enter a valid age.";
+return;
+}
+
+if(age>=seniorAge){
+document.getElementById("result").innerHTML=
+"Your dog is considered a Senior Dog.";
+}else{
+document.getElementById("result").innerHTML=
+"Your dog is not yet considered a Senior Dog.";
+}
+}
+</script>
+
+<footer>
+
+<hr>
+
+<p>
+<a href="index.html">Home</a> |
+<a href="calculators.html">Calculators</a> |
+<a href="guides.html">Guides</a> |
+<a href="about.html">About Us</a> |
+<a href="contact.html">Contact</a> |
+<a href="privacy-policy.html">Privacy Policy</a> |
+<a href="terms.html">Terms of Service</a>
+</p>
+
+<p>
+© 2025 Pet Calculators. All rights reserved.
+</p>
+
+</footer>
+
+</body>
+</html>

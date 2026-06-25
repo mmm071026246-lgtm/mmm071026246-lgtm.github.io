@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<script type="application/ld+json">
+{
+ "@context":"https://schema.org",
+ "@type":"FAQPage",
+ "mainEntity":[
+  {
+   "@type":"Question",
+   "name":"How long do dogs usually live?",
+   "acceptedAnswer":{
+    "@type":"Answer",
+    "text":"Most dogs live between 10 and 13 years, although lifespan varies by breed and size."
+   }
+  },
+  {
+   "@type":"Question",
+   "name":"Do small dogs live longer than large dogs?",
+   "acceptedAnswer":{
+    "@type":"Answer",
+    "text":"In general, small dog breeds tend to live longer than large and giant breeds."
+   }
+  },
+  {
+   "@type":"Question",
+   "name":"Is this calculator accurate?",
+   "acceptedAnswer":{
+    "@type":"Answer",
+    "text":"This calculator provides an estimate only and should not be considered a prediction of actual lifespan."
+   }
+  }
+ ]
+}
+</script>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Dog Life Expectancy Calculator | Estimate Your Dog's Lifespan</title>
+
+<meta name="description" content="Free Dog Life Expectancy Calculator. Estimate your dog's lifespan and remaining years based on age and size category.">
+
+<meta name="robots" content="index,follow">
+
+<link rel="canonical" href="https://mmm071026246-lgtm.github.io/dog-blog/dog-life-expectancy-calculator.html">
+
+<style>
+body{
+font-family:Arial,sans-serif;
+max-width:800px;
+margin:auto;
+padding:20px;
+line-height:1.7;
+}
+
+input,select,button{
+padding:10px;
+font-size:16px;
+margin-top:10px;
+}
+
+.result{
+margin-top:20px;
+font-size:20px;
+font-weight:bold;
+}
+
+a{
+text-decoration:none;
+color:#2563eb;
+}
+
+footer{
+margin-top:50px;
+text-align:center;
+color:#666;
+}
+</style>
+
+</head>
+<body>
+
+<a href="/dog-blog/index.html">← Home</a>
+
+<h1>Dog Life Expectancy Calculator</h1>
+
+<p>
+Estimate your dog's expected lifespan based on age and size category.
+Results are estimates only and individual dogs may live longer or shorter lives.
+</p>
+
+<label>Current Age (years)</label><br>
+<input type="number" id="age" min="0" step="0.1">
+
+<br><br>
+
+<label>Dog Size</label><br>
+
+<select id="size">
+<option value="15">Small Dog</option>
+<option value="13">Medium Dog</option>
+<option value="11">Large Dog</option>
+<option value="9">Giant Dog</option>
+</select>
+
+<br><br>
+
+<button onclick="calculateLife()">
+Estimate Lifespan
+</button>
+
+<div id="result" class="result"></div>
+
+<h2>Average Lifespan by Size</h2>
+
+<ul>
+<li>Small Dogs: 12–16 years</li>
+<li>Medium Dogs: 10–14 years</li>
+<li>Large Dogs: 8–12 years</li>
+<li>Giant Dogs: 7–10 years</li>
+</ul>
+
+<h2>Related Calculators</h2>
+
+<ul>
+<li><a href="/dog-blog/dog-age-calculator.html">Dog Age Calculator</a></li>
+<li><a href="/dog-blog/dog-bmi-calculator.html">Dog BMI Calculator</a></li>
+<li><a href="/dog-blog/dog-weight-loss-calculator.html">Dog Weight Loss Calculator</a></li>
+</ul>
+
+<h2>Related Guides</h2>
+
+<ul>
+<li><a href="/dog-blog/how-to-calculate-dog-age.html">How to Calculate Dog Age</a></li>
+<li><a href="/dog-blog/signs-your-dog-is-overweight.html">Signs Your Dog Is Overweight</a></li>
+</ul>
+
+<h2>Explore More Pet Tools</h2>
+
+<ul>
+<li><a href="/dog-blog/index.html">Pet Calculators Home</a></li>
+<li><a href="/dog-blog/calculators.html">All Pet Calculators</a></li>
+<li><a href="/dog-blog/guides.html">Pet Care Guides</a></li>
+</ul>
+
+<h2>Frequently Asked Questions</h2>
+
+<h3>How long do dogs usually live?</h3>
+<p>
+Most dogs live between 10 and 13 years, although lifespan varies by breed and size.
+</p>
+
+<h3>Do small dogs live longer than large dogs?</h3>
+<p>
+Yes. Small dog breeds generally live longer than large and giant breeds.
+</p>
+
+<h3>Is this calculator accurate?</h3>
+<p>
+This calculator provides estimates only and should not be considered a prediction of actual lifespan.
+</p>
+
+<script>
+function calculateLife(){
+
+let age=parseFloat(document.getElementById("age").value);
+let lifespan=parseFloat(document.getElementById("size").value);
+
+if(isNaN(age)||age<0){
+document.getElementById("result").innerHTML=
+"Please enter a valid age.";
+return;
+}
+
+let remaining=lifespan-age;
+
+if(remaining<0){
+remaining=0;
+}
+
+document.getElementById("result").innerHTML=
+"Estimated Lifespan: "+lifespan+
+" years<br>Estimated Remaining Years: "+
+remaining.toFixed(1);
+}
+</script>
+
+<footer>
+
+<hr>
+
+<p>
+<a href="/dog-blog/index.html">Home</a> |
+<a href="/dog-blog/calculators.html">Calculators</a> |
+<a href="/dog-blog/guides.html">Guides</a> |
+<a href="/dog-blog/about.html">About Us</a> |
+<a href="/dog-blog/contact.html">Contact</a> |
+<a href="/dog-blog/privacy-policy.html">Privacy Policy</a> |
+<a href="/dog-blog/terms.html">Terms of Service</a>
+</p>
+
+<p>
+ Pet Calculators. All rights reserved.
+</p>
+
+</footer>
+
+</body>
+</html>

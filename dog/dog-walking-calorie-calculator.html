@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<script type="application/ld+json">
+{
+ "@context":"https://schema.org",
+ "@type":"FAQPage",
+ "mainEntity":[
+  {
+   "@type":"Question",
+   "name":"How many calories does a dog burn while walking?",
+   "acceptedAnswer":{
+    "@type":"Answer",
+    "text":"Calories burned depend on body weight, walking duration, and walking intensity."
+   }
+  },
+  {
+   "@type":"Question",
+   "name":"Can walking help dogs lose weight?",
+   "acceptedAnswer":{
+    "@type":"Answer",
+    "text":"Yes. Regular walks combined with proper nutrition can support healthy weight management."
+   }
+  },
+  {
+   "@type":"Question",
+   "name":"Is this calculator accurate?",
+   "acceptedAnswer":{
+    "@type":"Answer",
+    "text":"This calculator provides an estimate only. Actual calorie expenditure may vary."
+   }
+  }
+ ]
+}
+</script>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Dog Walking Calorie Calculator | Calories Burned While Walking</title>
+
+<meta name="description" content="Free Dog Walking Calorie Calculator. Estimate how many calories your dog burns during daily walks.">
+
+<meta name="robots" content="index,follow">
+
+<link rel="canonical" href="https://mmm071026246-lgtm.github.io/pet-calculators/dog-walking-calorie-calculator.html">
+
+<style>
+body{
+font-family:Arial,sans-serif;
+max-width:800px;
+margin:auto;
+padding:20px;
+line-height:1.7;
+}
+
+input,button{
+padding:10px;
+font-size:16px;
+margin-top:10px;
+}
+
+.result{
+margin-top:20px;
+font-size:20px;
+font-weight:bold;
+}
+
+a{
+text-decoration:none;
+color:#2563eb;
+}
+
+footer{
+margin-top:50px;
+text-align:center;
+color:#666;
+}
+</style>
+
+</head>
+<body>
+
+<a href="index.html">← Home</a>
+
+<h1>Dog Walking Calorie Calculator</h1>
+
+<p>
+Estimate how many calories your dog may burn during a walk based on body weight and walking duration.
+</p>
+
+<label>Dog Weight (kg)</label><br>
+<input type="number" id="weight" step="0.1">
+
+<br><br>
+
+<label>Walking Time (minutes)</label><br>
+<input type="number" id="minutes">
+
+<br><br>
+
+<button onclick="calculateCalories()">
+Calculate Calories Burned
+</button>
+
+<div id="result" class="result"></div>
+
+<h2>How Walking Helps Dogs</h2>
+
+<p>
+Regular walks help support healthy body weight, cardiovascular fitness, mental stimulation, and overall well-being.
+</p>
+
+<h2>Related Calculators</h2>
+
+<ul>
+<li><a href="dog-calorie-calculator.html">Dog Calorie Calculator</a></li>
+<li><a href="dog-weight-loss-calculator.html">Dog Weight Loss Calculator</a></li>
+<li><a href="dog-bmi-calculator.html">Dog BMI Calculator</a></li>
+</ul>
+
+<h2>Related Guides</h2>
+
+<ul>
+<li><a href="signs-your-dog-is-overweight.html">Signs Your Dog Is Overweight</a></li>
+<li><a href="how-much-food-should-i-feed-my-dog.html">How Much Food Should I Feed My Dog?</a></li>
+</ul>
+
+<h2>Frequently Asked Questions</h2>
+
+<h3>How many calories does a dog burn while walking?</h3>
+<p>
+Calories burned vary based on body weight, walking speed, terrain, and duration.
+</p>
+
+<h3>Can walking help dogs lose weight?</h3>
+<p>
+Yes. Walking can support weight management when combined with proper nutrition.
+</p>
+
+<h3>Is this calculator accurate?</h3>
+<p>
+This calculator provides an estimate only and should not be considered a medical assessment.
+</p>
+
+<script>
+function calculateCalories(){
+
+let weight=parseFloat(document.getElementById("weight").value);
+let minutes=parseFloat(document.getElementById("minutes").value);
+
+if(isNaN(weight)||isNaN(minutes)||weight<=0||minutes<=0){
+document.getElementById("result").innerHTML=
+"Please enter valid values.";
+return;
+}
+
+let calories=(weight*0.8)*(minutes/30);
+
+document.getElementById("result").innerHTML=
+"Estimated Calories Burned: "+
+calories.toFixed(0)+" kcal";
+}
+</script>
+
+<footer>
+
+<hr>
+
+<p>
+<a href="index.html">Home</a> |
+<a href="calculators.html">Calculators</a> |
+<a href="guides.html">Guides</a> |
+<a href="about.html">About Us</a> |
+<a href="contact.html">Contact</a> |
+<a href="privacy-policy.html">Privacy Policy</a> |
+<a href="terms.html">Terms of Service</a>
+</p>
+
+<p>
+© 2025 Pet Calculators. All rights reserved.
+</p>
+
+</footer>
+
+</body>
+</html>

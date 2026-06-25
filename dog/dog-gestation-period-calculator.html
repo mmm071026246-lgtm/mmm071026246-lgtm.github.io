@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<script type="application/ld+json">
+{
+ "@context":"https://schema.org",
+ "@type":"FAQPage",
+ "mainEntity":[
+  {
+   "@type":"Question",
+   "name":"How long is a dog pregnancy?",
+   "acceptedAnswer":{
+    "@type":"Answer",
+    "text":"Dog pregnancy typically lasts about 63 days, although a normal range of 58 to 68 days is possible."
+   }
+  },
+  {
+   "@type":"Question",
+   "name":"Can puppies be born earlier or later?",
+   "acceptedAnswer":{
+    "@type":"Answer",
+    "text":"Yes. Actual delivery dates may vary depending on breed, litter size, and individual factors."
+   }
+  },
+  {
+   "@type":"Question",
+   "name":"Is this calculator accurate?",
+   "acceptedAnswer":{
+    "@type":"Answer",
+    "text":"This calculator provides an estimate only and should not replace veterinary care."
+   }
+  }
+ ]
+}
+</script>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Dog Gestation Period Calculator</title>
+
+<meta name="description" content="Free Dog Gestation Period Calculator. Estimate your dog's due date based on breeding date and track pregnancy milestones.">
+
+<meta name="robots" content="index,follow">
+
+<!-- ✅ canonical 수정 -->
+<link rel="canonical" href="https://mmm071026246-lgtm.github.io/pet-calculators/dog/dog-gestation-period-calculator.html">
+
+<style>
+body{
+font-family:Arial,sans-serif;
+max-width:800px;
+margin:auto;
+padding:20px;
+line-height:1.7;
+}
+
+input,button{
+padding:10px;
+font-size:16px;
+margin-top:10px;
+}
+
+.result{
+margin-top:20px;
+font-size:20px;
+font-weight:bold;
+}
+
+a{
+text-decoration:none;
+color:#2563eb;
+}
+</style>
+
+</head>
+<body>
+
+<!-- ✅ 홈 링크 수정 -->
+<a href="../index.html">← Home</a>
+
+<h1>Dog Gestation Period Calculator</h1>
+
+<p>
+Estimate your dog's expected due date and important pregnancy milestones.
+Most canine pregnancies last approximately 63 days from breeding.
+</p>
+
+<label>Breeding Date</label><br>
+<input type="date" id="breedDate">
+
+<br><br>
+
+<button onclick="calculateGestation()">
+Calculate Due Date
+</button>
+
+<div id="result" class="result"></div>
+
+<h2>Typical Dog Pregnancy Timeline</h2>
+
+<ul>
+<li>Week 1–2: Fertilization and early development</li>
+<li>Week 3–4: Embryo implantation</li>
+<li>Week 5–6: Rapid fetal growth</li>
+<li>Week 7–8: Physical changes become noticeable</li>
+<li>Week 9: Whelping may occur</li>
+</ul>
+
+<h2>Related Calculators</h2>
+
+<ul>
+<li><a href="dog-pregnancy-calculator.html">Dog Pregnancy Calculator</a></li>
+<li><a href="dog-pregnancy-week-calculator.html">Dog Pregnancy Week Calculator</a></li>
+<li><a href="dog-heat-cycle-calculator.html">Dog Heat Cycle Calculator</a></li>
+<li><a href="puppy-weight-calculator.html">Puppy Weight Calculator</a></li>
+</ul>
+
+<h2>Related Guides</h2>
+
+<ul>
+<!-- ✅ blog 경로 수정 -->
+<li><a href="../dog-blog/dog-pregnancy-timeline.html">Dog Pregnancy Timeline</a></li>
+<li><a href="../dog-blog/puppy-growth-stages-month-by-month.html">Puppy Growth Stages Month by Month</a></li>
+<li><a href="../dog-blog/how-much-food-should-i-feed-my-dog.html">How Much Food Should I Feed My Dog?</a></li>
+</ul>
+
+<script>
+function calculateGestation(){
+
+let breedingDate =
+document.getElementById("breedDate").value;
+
+if(!breedingDate){
+document.getElementById("result").innerHTML =
+"Please select a breeding date.";
+return;
+}
+
+let dueDate = new Date(breedingDate);
+dueDate.setDate(dueDate.getDate() + 63);
+
+document.getElementById("result").innerHTML =
+"Estimated Due Date: " +
+dueDate.toDateString();
+}
+</script>
+
+</body>
+</html>

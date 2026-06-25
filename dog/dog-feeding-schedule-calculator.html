@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<script type="application/ld+json">
+{
+ "@context":"https://schema.org",
+ "@type":"FAQPage",
+ "mainEntity":[
+  {
+   "@type":"Question",
+   "name":"How many times a day should a dog eat?",
+   "acceptedAnswer":{
+    "@type":"Answer",
+    "text":"Most adult dogs eat twice daily, while puppies typically require three to four meals per day."
+   }
+  },
+  {
+   "@type":"Question",
+   "name":"Should puppies eat more frequently?",
+   "acceptedAnswer":{
+    "@type":"Answer",
+    "text":"Yes. Puppies generally need smaller meals spread throughout the day."
+   }
+  },
+  {
+   "@type":"Question",
+   "name":"Can feeding schedules vary?",
+   "acceptedAnswer":{
+    "@type":"Answer",
+    "text":"Yes. Age, activity level, health conditions, and veterinary recommendations may affect feeding frequency."
+   }
+  }
+ ]
+}
+</script>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Dog Feeding Schedule Calculator</title>
+
+<meta name="description" content="Free Dog Feeding Schedule Calculator. Estimate how many meals your dog should eat each day based on age.">
+
+<meta name="robots" content="index,follow">
+
+<!-- ✅ canonical 수정 -->
+<link rel="canonical" href="https://mmm071026246-lgtm.github.io/pet-calculators/dog/dog-feeding-schedule-calculator.html">
+
+<style>
+body{
+font-family:Arial,sans-serif;
+max-width:800px;
+margin:auto;
+padding:20px;
+line-height:1.7;
+}
+
+input,button{
+padding:10px;
+font-size:16px;
+margin-top:10px;
+}
+
+.result{
+margin-top:20px;
+font-size:20px;
+font-weight:bold;
+}
+
+a{
+text-decoration:none;
+color:#2563eb;
+}
+</style>
+
+</head>
+<body>
+
+<!-- ✅ 홈 링크 수정 -->
+<a href="../index.html">← Home</a>
+
+<h1>Dog Feeding Schedule Calculator</h1>
+
+<p>
+Estimate how often your dog should be fed each day based on age.
+This tool provides general feeding frequency recommendations.
+</p>
+
+<label>Dog Age (months)</label><br>
+<input type="number" id="age" min="1">
+
+<br><br>
+
+<button onclick="calculateSchedule()">
+Calculate Feeding Schedule
+</button>
+
+<div id="result" class="result"></div>
+
+<h2>General Feeding Guidelines</h2>
+
+<ul>
+<li>2–3 Months: 4 meals per day</li>
+<li>4–6 Months: 3 meals per day</li>
+<li>7–12 Months: 2–3 meals per day</li>
+<li>Adult Dogs: 2 meals per day</li>
+</ul>
+
+<h2>Related Calculators</h2>
+
+<ul>
+<li><a href="dog-food-calculator.html">Dog Food Calculator</a></li>
+<li><a href="dog-calorie-calculator.html">Dog Calorie Calculator</a></li>
+<li><a href="dog-water-intake-calculator.html">Dog Water Intake Calculator</a></li>
+<li><a href="dog-weight-loss-calculator.html">Dog Weight Loss Calculator</a></li>
+<li><a href="dog-bmi-calculator.html">Dog BMI Calculator</a></li>
+</ul>
+
+<h2>Related Guides</h2>
+
+<ul>
+<!-- ✅ blog 경로 수정 -->
+<li><a href="../dog-blog/how-much-food-should-i-feed-my-dog.html">How Much Food Should I Feed My Dog?</a></li>
+<li><a href="../dog-blog/puppy-growth-stages-month-by-month.html">Puppy Growth Stages Month by Month</a></li>
+<li><a href="../dog-blog/signs-your-dog-is-overweight.html">Signs Your Dog Is Overweight</a></li>
+</ul>
+
+<script>
+function calculateSchedule(){
+
+let age=parseFloat(document.getElementById("age").value);
+
+if(isNaN(age)||age<=0){
+document.getElementById("result").innerHTML=
+"Please enter a valid age.";
+return;
+}
+
+let meals="";
+
+if(age<=3){
+meals="4 meals per day";
+}
+else if(age<=6){
+meals="3 meals per day";
+}
+else if(age<=12){
+meals="2–3 meals per day";
+}
+else{
+meals="2 meals per day";
+}
+
+document.getElementById("result").innerHTML=
+"Recommended Feeding Frequency: "+meals;
+}
+</script>
+
+</body>
+</html>

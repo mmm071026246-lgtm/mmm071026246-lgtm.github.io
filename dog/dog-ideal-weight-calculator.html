@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<script type="application/ld+json">
+{
+ "@context":"https://schema.org",
+ "@type":"FAQPage",
+ "mainEntity":[
+  {
+   "@type":"Question",
+   "name":"How do I know if my dog is at a healthy weight?",
+   "acceptedAnswer":{
+    "@type":"Answer",
+    "text":"A healthy dog typically has a visible waist and ribs that can be felt without excessive pressure."
+   }
+  },
+  {
+   "@type":"Question",
+   "name":"Can breed affect ideal weight?",
+   "acceptedAnswer":{
+    "@type":"Answer",
+    "text":"Yes. Different breeds have very different healthy weight ranges."
+   }
+  },
+  {
+   "@type":"Question",
+   "name":"Is this calculator accurate?",
+   "acceptedAnswer":{
+    "@type":"Answer",
+    "text":"This calculator provides a general estimate and should not replace veterinary advice."
+   }
+  }
+ ]
+}
+</script>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Dog Ideal Weight Calculator | Healthy Weight Estimate</title>
+
+<meta name="description" content="Free Dog Ideal Weight Calculator. Estimate a healthy weight range for your dog based on current weight and body condition.">
+
+<meta name="robots" content="index,follow">
+
+<link rel="canonical" href="https://mmm071026246-lgtm.github.io/dog-blog/dog-ideal-weight-calculator.html">
+
+<style>
+body{
+font-family:Arial,sans-serif;
+max-width:800px;
+margin:auto;
+padding:20px;
+line-height:1.7;
+}
+input,select,button{
+padding:10px;
+font-size:16px;
+margin-top:10px;
+}
+.result{
+margin-top:20px;
+font-size:20px;
+font-weight:bold;
+}
+a{
+text-decoration:none;
+color:#2563eb;
+}
+footer{
+margin-top:50px;
+text-align:center;
+color:#666;
+}
+</style>
+
+</head>
+<body>
+
+<a href="/dog-blog/index.html">← Home</a>
+
+<h1>Dog Ideal Weight Calculator</h1>
+
+<p>
+Estimate a healthy target weight range based on your dog's current weight and body condition.
+</p>
+
+<label>Current Weight (kg)</label><br>
+<input type="number" id="weight" step="0.1">
+
+<br><br>
+
+<label>Body Condition</label><br>
+
+<select id="condition">
+<option value="0.85">Overweight</option>
+<option value="1">Healthy Weight</option>
+<option value="1.15">Underweight</option>
+</select>
+
+<br><br>
+
+<button onclick="calculateIdealWeight()">
+Calculate Ideal Weight
+</button>
+
+<div id="result" class="result"></div>
+
+<h2>Why Ideal Weight Matters</h2>
+
+<p>
+Maintaining a healthy weight may reduce the risk of joint problems, heart disease, and other obesity-related conditions.
+</p>
+
+<h2>Related Calculators</h2>
+
+<ul>
+<li><a href="/dog-blog/dog-bmi-calculator.html">Dog BMI Calculator</a></li>
+<li><a href="/dog-blog/dog-weight-loss-calculator.html">Dog Weight Loss Calculator</a></li>
+<li><a href="/dog-blog/dog-calorie-calculator.html">Dog Calorie Calculator</a></li>
+</ul>
+
+<h2>Related Guides</h2>
+
+<ul>
+<li><a href="/dog-blog/signs-your-dog-is-overweight.html">Signs Your Dog Is Overweight</a></li>
+<li><a href="/dog-blog/how-much-food-should-i-feed-my-dog.html">How Much Food Should I Feed My Dog?</a></li>
+</ul>
+
+<h2>Frequently Asked Questions</h2>
+
+<h3>How do I know if my dog is at a healthy weight?</h3>
+<p>
+A healthy dog usually has a visible waist and ribs that can be felt without excessive pressure.
+</p>
+
+<h3>Can breed affect ideal weight?</h3>
+<p>
+Yes. Healthy weight ranges vary significantly between breeds.
+</p>
+
+<h3>Is this calculator accurate?</h3>
+<p>
+This calculator provides a general estimate only and should not replace veterinary advice.
+</p>
+
+<script>
+function calculateIdealWeight(){
+
+let weight=parseFloat(document.getElementById("weight").value);
+let factor=parseFloat(document.getElementById("condition").value);
+
+if(isNaN(weight)||weight<=0){
+document.getElementById("result").innerHTML=
+"Please enter a valid weight.";
+return;
+}
+
+let ideal=weight*factor;
+
+document.getElementById("result").innerHTML=
+"Estimated Ideal Weight: "+
+ideal.toFixed(1)+" kg";
+}
+</script>
+
+<footer>
+
+<hr>
+
+<p>
+<a href="/dog-blog/index.html">Home</a> |
+<a href="/dog-blog/calculators.html">Calculators</a> |
+<a href="/dog-blog/guides.html">Guides</a> |
+<a href="/dog-blog/about.html">About Us</a> |
+<a href="/dog-blog/contact.html">Contact</a> |
+<a href="/dog-blog/privacy-policy.html">Privacy Policy</a> |
+<a href="/dog-blog/terms.html">Terms of Service</a>
+</p>
+
+<p>
+ Pet Calculators. All rights reserved.
+</p>
+
+</footer>
+
+</body>
+</html>

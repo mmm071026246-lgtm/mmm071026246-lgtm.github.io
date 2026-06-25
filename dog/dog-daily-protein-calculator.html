@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+
+<script type="application/ld+json">
+{
+ "@context":"https://schema.org",
+ "@type":"FAQPage",
+ "mainEntity":[
+  {
+   "@type":"Question",
+   "name":"How much protein does a dog need daily?",
+   "acceptedAnswer":{
+    "@type":"Answer",
+    "text":"Protein needs vary by age, size, activity level, and health status. Active dogs generally require more protein than sedentary dogs."
+   }
+  },
+  {
+   "@type":"Question",
+   "name":"Can dogs eat too much protein?",
+   "acceptedAnswer":{
+    "@type":"Answer",
+    "text":"Healthy dogs can usually tolerate high-protein diets, but nutritional needs vary. Consult your veterinarian for specific recommendations."
+   }
+  },
+  {
+   "@type":"Question",
+   "name":"Is this calculator accurate?",
+   "acceptedAnswer":{
+    "@type":"Answer",
+    "text":"This calculator provides an estimate only and should not replace professional veterinary nutritional advice."
+   }
+  }
+ ]
+}
+</script>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Dog Daily Protein Calculator | Estimate Daily Protein Needs</title>
+
+<meta name="description" content="Free Dog Daily Protein Calculator. Estimate how much protein your dog may need each day based on body weight and activity level.">
+
+<meta name="keywords" content="dog protein calculator,dog nutrition calculator,daily protein intake for dogs,dog feeding calculator">
+
+<meta name="robots" content="index,follow">
+
+<link rel="canonical" href="https://mmm071026246-lgtm.github.io/dog-blog/dog-daily-protein-calculator.html">
+
+<style>
+body{
+    font-family:Arial,sans-serif;
+    max-width:800px;
+    margin:auto;
+    padding:20px;
+    line-height:1.7;
+    color:#333;
+}
+
+input,select,button{
+    padding:10px;
+    font-size:16px;
+    margin-top:10px;
+}
+
+button{
+    cursor:pointer;
+}
+
+.result{
+    margin-top:20px;
+    font-size:22px;
+    font-weight:bold;
+}
+
+a{
+    text-decoration:none;
+    color:#2563eb;
+}
+
+a:hover{
+    text-decoration:underline;
+}
+
+footer{
+    margin-top:50px;
+    text-align:center;
+    color:#666;
+}
+
+ul{
+    padding-left:20px;
+}
+</style>
+
+</head>
+<body>
+
+<a href="../index.html">← Home</a>
+
+<h1>Dog Daily Protein Calculator</h1>
+
+<p>
+Use this free Dog Daily Protein Calculator to estimate how much protein your dog may need each day based on body weight and activity level.
+</p>
+
+<label for="weight">Dog Weight (kg)</label><br> <input type="number" id="weight" min="0.1" step="0.1">
+
+<br><br>
+
+<label for="activity">Activity Level</label><br>
+
+<select id="activity">
+<option value="2">Low Activity</option>
+<option value="2.5">Moderate Activity</option>
+<option value="3">High Activity</option>
+</select>
+
+<br><br>
+
+<button onclick="calculateProtein()">
+Calculate Protein Needs
+</button>
+
+<div class="result" id="result"></div>
+
+<h2>Why Protein Matters</h2>
+
+<p>
+Protein supports muscle maintenance, growth, tissue repair, immune function, and overall health. Puppies, active dogs, and working dogs often require more protein than less active adult dogs.
+</p>
+
+<h2>Factors That Affect Protein Requirements</h2>
+
+<ul>
+<li>Body weight</li>
+<li>Age and life stage</li>
+<li>Activity level</li>
+<li>Pregnancy or nursing</li>
+<li>Health conditions</li>
+</ul>
+
+<h2>Related Calculators</h2>
+
+<ul>
+<li><a href="../dog-blog/dog-food-calculator.html">Dog Food Calculator</a></li>
+<li><a href="../dog-blog/dog-calorie-calculator.html">Dog Calorie Calculator</a></li>
+<li><a href="../dog-blog/dog-daily-water-calculator.html">Dog Daily Water Calculator</a></li>
+<li><a href="../dog-blog/dog-weight-gain-calculator.html">Dog Weight Gain Calculator</a></li>
+<li><a href="../dog-blog/dog-weight-loss-calculator.html">Dog Weight Loss Calculator</a></li>
+</ul>
+
+<h2>Related Articles</h2>
+
+<ul>
+<li><a href="../dog-blog/how-much-food-should-i-feed-my-dog.html">How Much Food Should I Feed My Dog?</a></li>
+<li><a href="../dog-blog/how-much-water-should-a-dog-drink.html">How Much Water Should a Dog Drink?</a></li>
+<li><a href="../dog-blog/signs-your-dog-is-overweight.html">Signs Your Dog Is Overweight</a></li>
+</ul>
+
+<h2>Frequently Asked Questions</h2>
+
+<h3>How much protein does a dog need daily?</h3>
+<p>
+Protein requirements vary based on weight, age, and activity level. Active dogs typically need more protein than sedentary dogs.
+</p>
+
+<h3>Can dogs eat too much protein?</h3>
+<p>
+Most healthy dogs can tolerate high-protein diets, but nutritional needs vary by individual dog.
+</p>
+
+<h3>Is this calculator accurate?</h3>
+<p>
+This calculator provides a general estimate and should not replace veterinary nutritional advice.
+</p>
+
+<script>
+function calculateProtein(){
+
+    let weight =
+    parseFloat(document.getElementById("weight").value);
+
+    let factor =
+    parseFloat(document.getElementById("activity").value);
+
+    if(
+        isNaN(weight) ||
+        weight <= 0
+    ){
+        document.getElementById("result").innerHTML =
+        "Please enter a valid weight.";
+        return;
+    }
+
+    let protein =
+    weight * factor;
+
+    document.getElementById("result").innerHTML =
+    "Estimated Daily Protein Requirement: " +
+    protein.toFixed(1) +
+    " grams per day";
+}
+</script>
+
+<footer>
+
+<hr>
+
+<p>
+<a href="../index.html">Home</a> |
+<a href="../calculators.html">Calculators</a> |
+<a href="../guides.html">Guides</a> |
+<a href="../about.html">About</a> |
+<a href="../contact.html">Contact</a>
+</p>
+
+<p>
+© Pet Calculators. All rights reserved.
+</p>
+
+</footer>
+
+</body>
+</html>

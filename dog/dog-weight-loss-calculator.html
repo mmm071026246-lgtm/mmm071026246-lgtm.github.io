@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<script type="application/ld+json">
+{
+ "@context":"https://schema.org",
+ "@type":"FAQPage",
+ "mainEntity":[
+  {
+   "@type":"Question",
+   "name":"How fast should a dog lose weight?",
+   "acceptedAnswer":{
+    "@type":"Answer",
+    "text":"Most veterinarians recommend gradual weight loss of approximately 1% to 2% of body weight per week."
+   }
+  },
+  {
+   "@type":"Question",
+   "name":"Can overweight dogs develop health problems?",
+   "acceptedAnswer":{
+    "@type":"Answer",
+    "text":"Yes. Excess weight may increase the risk of diabetes, arthritis, heart disease, and reduced lifespan."
+   }
+  },
+  {
+   "@type":"Question",
+   "name":"Should I consult a veterinarian before starting a weight loss plan?",
+   "acceptedAnswer":{
+    "@type":"Answer",
+    "text":"Yes. A veterinarian can help determine a safe target weight and feeding strategy."
+   }
+  }
+ ]
+}
+</script>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Dog Weight Loss Calculator | Healthy Weight Goal</title>
+
+<meta name="description" content="Free Dog Weight Loss Calculator. Estimate how much weight your dog should lose and how long it may take to reach a healthy target weight.">
+
+<meta name="keywords" content="dog weight loss calculator,dog obesity calculator,dog weight management,overweight dog">
+
+<meta name="robots" content="index,follow">
+
+<link rel="canonical" href="https://mmm071026246-lgtm.github.io/pet-calculators/dog-weight-loss-calculator.html">
+
+<style>
+body{
+    font-family:Arial,sans-serif;
+    max-width:800px;
+    margin:auto;
+    padding:20px;
+    line-height:1.7;
+    color:#333;
+}
+
+input,button{
+    padding:10px;
+    font-size:16px;
+    margin-top:10px;
+}
+
+button{
+    cursor:pointer;
+}
+
+.result{
+    margin-top:20px;
+    font-size:22px;
+    font-weight:bold;
+}
+
+a{
+    text-decoration:none;
+    color:#2563eb;
+}
+
+a:hover{
+    text-decoration:underline;
+}
+
+footer{
+    margin-top:50px;
+    text-align:center;
+    color:#666;
+}
+
+ul{
+    padding-left:20px;
+}
+</style>
+
+</head>
+<body>
+
+<a href="index.html">← Home</a>
+
+<h1>Dog Weight Loss Calculator</h1>
+
+<p>
+Use this free Dog Weight Loss Calculator to estimate how much weight your dog may need to lose and how long it could take to reach a healthier target weight.
+</p>
+
+<label for="currentWeight">Current Weight (kg)</label><br>
+<input type="number" id="currentWeight" min="0.1" step="0.1">
+
+<br><br>
+
+<label for="targetWeight">Target Weight (kg)</label><br>
+<input type="number" id="targetWeight" min="0.1" step="0.1">
+
+<br><br>
+
+<button onclick="calculateWeightLoss()">
+Calculate Weight Loss
+</button>
+
+<div class="result" id="result"></div>
+
+<h2>How Does Dog Weight Loss Work?</h2>
+
+<p>
+Veterinarians generally recommend slow and steady weight loss. Most healthy dogs can safely lose around 1% to 2% of their body weight per week when following an appropriate nutrition and exercise plan.
+</p>
+
+<h2>Common Causes of Weight Gain</h2>
+
+<ul>
+<li>Overfeeding</li>
+<li>Too many treats</li>
+<li>Lack of exercise</li>
+<li>Age-related metabolism changes</li>
+<li>Certain medical conditions</li>
+</ul>
+
+<h2>Tips for Healthy Weight Loss</h2>
+
+<ul>
+<li>Measure food portions carefully.</li>
+<li>Reduce high-calorie treats.</li>
+<li>Increase daily exercise gradually.</li>
+<li>Monitor body condition regularly.</li>
+<li>Consult your veterinarian when needed.</li>
+</ul>
+
+<h2>Related Calculators</h2>
+
+<ul>
+<li><a href="dog-bmi-calculator.html">Dog BMI Calculator</a></li>
+<li><a href="dog-food-calculator.html">Dog Food Calculator</a></li>
+<li><a href="dog-calorie-calculator.html">Dog Calorie Calculator</a></li>
+<li><a href="dog-water-intake-calculator.html">Dog Water Intake Calculator</a></li>
+</ul>
+
+<h2>Related Articles</h2>
+
+<ul>
+<li><a href="signs-your-dog-is-overweight.html">Signs Your Dog Is Overweight</a></li>
+<li><a href="how-much-food-should-i-feed-my-dog.html">How Much Food Should I Feed My Dog?</a></li>
+<li><a href="how-much-water-should-a-dog-drink.html">How Much Water Should a Dog Drink?</a></li>
+</ul>
+
+<h2>Frequently Asked Questions</h2>
+
+<h3>How fast should a dog lose weight?</h3>
+<p>
+Most dogs should lose weight gradually at a rate of about 1% to 2% of body weight per week.
+</p>
+
+<h3>Can overweight dogs develop health problems?</h3>
+<p>
+Yes. Obesity may increase the risk of arthritis, diabetes, heart disease, and reduced lifespan.
+</p>
+
+<h3>Should I consult a veterinarian?</h3>
+<p>
+Yes. A veterinarian can help create a safe and effective weight management plan.
+</p>
+
+<script>
+function calculateWeightLoss(){
+
+    let current =
+    parseFloat(document.getElementById("currentWeight").value);
+
+    let target =
+    parseFloat(document.getElementById("targetWeight").value);
+
+    if(
+        isNaN(current) ||
+        isNaN(target) ||
+        current <= 0 ||
+        target <= 0 ||
+        target >= current
+    ){
+        document.getElementById("result").innerHTML =
+        "Please enter valid values. Target weight must be lower than current weight.";
+        return;
+    }
+
+    let weightToLose = current - target;
+
+    let weeks =
+    weightToLose / (current * 0.015);
+
+    document.getElementById("result").innerHTML =
+    "Weight To Lose: " +
+    weightToLose.toFixed(1) +
+    " kg<br>" +
+    "Estimated Time: " +
+    Math.ceil(weeks) +
+    " weeks";
+}
+</script>
+
+<footer>
+
+<hr>
+
+<p>
+<a href="index.html">Home</a> |
+<a href="calculators.html">Calculators</a> |
+<a href="guides.html">Guides</a> |
+<a href="about.html">About</a> |
+<a href="contact.html">Contact</a>
+</p>
+
+<p>
+© 2025 Pet Calculators. All rights reserved.
+</p>
+
+</footer>
+
+</body>
+</html>
